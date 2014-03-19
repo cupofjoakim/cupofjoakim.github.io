@@ -1,0 +1,110 @@
+/* line 1, ../sass/_landing.scss */
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+/* line 9, ../sass/_landing.scss */
+.canvas-overlay::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+}
+/* line 17, ../sass/_landing.scss */
+.canvas-overlay .cont-wrapp {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 980px;
+}
+/* line 23, ../sass/_landing.scss */
+.canvas-overlay .cont-wrapp h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 62px;
+}
+/* line 28, ../sass/_landing.scss */
+.canvas-overlay .cont-wrapp h1 a {
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+/* line 32, ../sass/_landing.scss */
+.canvas-overlay .cont-wrapp h1 a:hover {
+  color: yellow;
+}
+/* line 38, ../sass/_landing.scss */
+.canvas-overlay .cont-wrapp .subheader {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 36px;
+  font-size: 18px;
+}
+@media (max-width: 980px) {
+  /* line 17, ../sass/_landing.scss */
+  .canvas-overlay .cont-wrapp {
+    width: 100%;
+    padding: 0 20px;
+  }
+  /* line 48, ../sass/_landing.scss */
+  .canvas-overlay .cont-wrapp h1 {
+    font-size: 40px;
+  }
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  padding: 20px;
+  min-height: 100px;
+  width: 100%;
+}
+
+/* Base */
+/* line 11, ../sass/main.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/main.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 19, ../sass/main.scss */
+body {
+  background: #333;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/main.scss */
+canvas, img {
+  max-width: 100%;
+}
+
+/* line 30, ../sass/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arbutus Slab', serif;
+  color: white;
+}
+
+/* line 35, ../sass/main.scss */
+div, span, p {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* line 39, ../sass/main.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}

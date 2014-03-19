@@ -1,0 +1,53 @@
+.canvas-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+
+    .cont-wrapp {
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        width: 980px;
+
+        h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 62px;
+
+            a {
+                cursor: pointer;
+                @include single-transition(color, 0.3s, ease);
+
+                &:hover {
+                    color: rgba(255,255,0,1);
+                }
+            }
+        }
+
+        .subheader {
+            color: rgba(255,255,255,0.6);
+            line-height: 36px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 980px) {
+            width: 100%;
+            padding: 0 20px;
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+}

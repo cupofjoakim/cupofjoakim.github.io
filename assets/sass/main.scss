@@ -1,0 +1,42 @@
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+
+@import "_landing.scss";
+@import "_footer.scss";
+
+
+/* Base */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #333;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas, img {
+    max-width: 100%;
+}
+
+#{headings()} {
+    font-family: 'Arbutus Slab', serif;
+    color: white;
+}
+
+div, span, p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
