@@ -22,10 +22,9 @@ $(document).ready(function(){
         canvas.width = W;
         canvas.height = H;
 
-        var pixelDensity = Math.round((W+H)/15);
-        console.log(pixelDensity);
+        var particleDensity = Math.round((W+H)/15);
 
-        var particleCount = pixelDensity,
+        var particleCount = particleDensity,
             particles = [],
             minDist = particleCount*0.9,
             dist;
