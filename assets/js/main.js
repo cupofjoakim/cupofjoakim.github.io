@@ -1,3 +1,5 @@
+// Cudos to Yash Bhardwaj for his pen over at http://codepen.io/yashbhardwaj/pen/EBFxA which is the base to what I've done for the landing.
+
 $(document).ready(function(){
     window.requestAnimFrame = (function(){
       return  window.requestAnimationFrame       || 
@@ -43,7 +45,7 @@ $(document).ready(function(){
             this.radius = 5;
             
             this.draw = function() {
-                ctx.fillStyle = "#444444";
+                ctx.fillStyle = "rgba(100,100,100,1)";
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
                 
