@@ -1,0 +1,47 @@
+section#about-me {
+    background: url('http://www.fillmurray.com/g/700/700');
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .wrapper {
+        padding:50px 0 80px;
+        min-height:500px;
+        //@include background-image(linear-gradient(left, rgba(44,63,73,1) 73%, rgba(44,63,73,0.8)));
+        @include background-image(linear-gradient(left, rgba(60,174,202,1) 73%, rgba(60,174,202,0.8)));
+
+        h1 {
+            font-size: 40px;
+            line-height: 40px;
+            margin: 35px 0 0;
+        }
+
+        p {
+            max-width: 447px;
+            font-size: 18px;
+            line-height: 24px;
+
+            &.intro {
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            a {
+                border-bottom: 1px dotted #fff;
+
+                &:hover {
+                    //border-bottom: 0;
+                    background-color: rgba(44,63,73,0.3);
+                }
+            }
+        }
+
+        .social-networks {
+            padding: 0;
+            margin: 10px 0;
+
+            li {
+                display: block;
+            }
+        }
+    }
+}

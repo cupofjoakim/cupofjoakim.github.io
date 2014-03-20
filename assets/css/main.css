@@ -1,62 +1,401 @@
-/* line 1, ../sass/_landing.scss */
-.canvas-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
+/*
+  Simple Grid
+  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - dallasbass.com
+*/
+/* line 8, ../sass/_simplegrid.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 9, ../sass/_landing.scss */
-.canvas-overlay::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em;
-  /* Adjusts for spacing */
+
+/* line 14, ../sass/_simplegrid.scss */
+body {
+  margin: 0px;
 }
-/* line 17, ../sass/_landing.scss */
-.canvas-overlay .cont-wrapp {
-  text-align: left;
-  display: inline-block;
-  vertical-align: middle;
-  width: 980px;
+
+/* line 18, ../sass/_simplegrid.scss */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
 }
-/* line 23, ../sass/_landing.scss */
-.canvas-overlay .cont-wrapp h1 {
-  margin: 0;
-  color: #fff;
-  font-size: 62px;
+
+/* line 23, ../sass/_simplegrid.scss */
+[class*='col-']:last-of-type {
+  padding-right: 0px;
 }
-/* line 28, ../sass/_landing.scss */
-.canvas-overlay .cont-wrapp h1 a {
+
+/* line 27, ../sass/_simplegrid.scss */
+.grid {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 35, ../sass/_simplegrid.scss */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 41, ../sass/_simplegrid.scss */
+.grid-pad {
+  padding: 20px 0 0px 20px;
+}
+
+/* line 45, ../sass/_simplegrid.scss */
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+/* line 49, ../sass/_simplegrid.scss */
+.push-right {
+  float: right;
+}
+
+/* Content Columns */
+/* line 54, ../sass/_simplegrid.scss */
+.col-1-1 {
+  width: 100%;
+}
+
+/* line 57, ../sass/_simplegrid.scss */
+.col-2-3, .col-8-12 {
+  width: 66.66%;
+}
+
+/* line 61, ../sass/_simplegrid.scss */
+.col-1-2, .col-6-12 {
+  width: 50%;
+}
+
+/* line 65, ../sass/_simplegrid.scss */
+.col-1-3, .col-4-12 {
+  width: 33.33%;
+}
+
+/* line 69, ../sass/_simplegrid.scss */
+.col-1-4, .col-3-12 {
+  width: 25%;
+}
+
+/* line 73, ../sass/_simplegrid.scss */
+.col-1-5 {
+  width: 20%;
+}
+
+/* line 77, ../sass/_simplegrid.scss */
+.col-1-6, .col-2-12 {
+  width: 16.667%;
+}
+
+/* line 81, ../sass/_simplegrid.scss */
+.col-1-7 {
+  width: 14.28%;
+}
+
+/* line 85, ../sass/_simplegrid.scss */
+.col-1-8 {
+  width: 12.5%;
+}
+
+/* line 89, ../sass/_simplegrid.scss */
+.col-1-9 {
+  width: 11.1%;
+}
+
+/* line 93, ../sass/_simplegrid.scss */
+.col-1-10 {
+  width: 10%;
+}
+
+/* line 97, ../sass/_simplegrid.scss */
+.col-1-11 {
+  width: 9.09%;
+}
+
+/* line 101, ../sass/_simplegrid.scss */
+.col-1-12 {
+  width: 8.33%;
+}
+
+/* Layout Columns */
+/* line 106, ../sass/_simplegrid.scss */
+.col-11-12 {
+  width: 91.66%;
+}
+
+/* line 110, ../sass/_simplegrid.scss */
+.col-10-12 {
+  width: 83.333%;
+}
+
+/* line 114, ../sass/_simplegrid.scss */
+.col-9-12 {
+  width: 75%;
+}
+
+/* line 118, ../sass/_simplegrid.scss */
+.col-5-12 {
+  width: 41.66%;
+}
+
+/* line 122, ../sass/_simplegrid.scss */
+.col-7-12 {
+  width: 58.33%;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 128, ../sass/_simplegrid.scss */
+  .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 137, ../sass/_simplegrid.scss */
+  [class*='col-'] {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* line 1, ../sass/_buttons.scss */
+.button {
   cursor: pointer;
+  display: block;
+}
+/* line 5, ../sass/_buttons.scss */
+.button.social {
+  width: 100%;
+  height: 50px;
+  line-height: 44px;
+  text-align: center;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+  position: relative;
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-/* line 32, ../sass/_landing.scss */
-.canvas-overlay .cont-wrapp h1 a:hover {
-  color: yellow;
+/* line 15, ../sass/_buttons.scss */
+.button.social span {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
 }
-/* line 38, ../sass/_landing.scss */
-.canvas-overlay .cont-wrapp .subheader {
+/* line 21, ../sass/_buttons.scss */
+.button.social:after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 35, ../sass/_buttons.scss */
+.button.social:hover {
+  color: #3caeca;
+}
+/* line 38, ../sass/_buttons.scss */
+.button.social:hover:after {
+  width: 100%;
+}
+
+/* line 1, ../sass/_header.scss */
+header {
+  position: absolute;
+  width: 100%;
+}
+/* line 5, ../sass/_header.scss */
+header div {
+  float: left;
+}
+/* line 9, ../sass/_header.scss */
+header .toggle-nav {
+  float: right;
+  width: 80px;
+  background: #222;
+  padding: 20px 20px 12px;
+  margin: 20px;
+  cursor: pointer;
+}
+/* line 17, ../sass/_header.scss */
+header .toggle-nav .bar {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 8px;
+  background: #fff;
+}
+
+/* line 2, ../sass/_landing.scss */
+.landing .canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.7s ease;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition: opacity 0.7s ease 0.3s;
+  -o-transition: opacity 0.7s ease 0.3s;
+  transition: opacity 0.7s ease 0.3s;
+}
+/* line 11, ../sass/_landing.scss */
+.landing .canvas-overlay.shown {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 15, ../sass/_landing.scss */
+.landing .canvas-overlay .cont-wrapp {
+  text-align: left;
+  display: block;
+  top: 50%;
+  height: 196px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+}
+/* line 23, ../sass/_landing.scss */
+.landing .canvas-overlay .cont-wrapp h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 62px;
+}
+/* line 28, ../sass/_landing.scss */
+.landing .canvas-overlay .cont-wrapp h1 a {
+  background-color: rgba(60, 174, 202, 0);
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+/* line 35, ../sass/_landing.scss */
+.landing .canvas-overlay .cont-wrapp h1 a:hover {
+  background-color: #3caeca;
+}
+/* line 44, ../sass/_landing.scss */
+.landing .canvas-overlay .cont-wrapp .subheader {
   color: rgba(255, 255, 255, 0.6);
   line-height: 36px;
   font-size: 18px;
 }
 @media (max-width: 980px) {
-  /* line 17, ../sass/_landing.scss */
-  .canvas-overlay .cont-wrapp {
-    width: 100%;
-    padding: 0 20px;
-  }
-  /* line 48, ../sass/_landing.scss */
-  .canvas-overlay .cont-wrapp h1 {
+  /* line 51, ../sass/_landing.scss */
+  .landing .canvas-overlay .cont-wrapp h1 {
     font-size: 40px;
   }
+}
+
+/* line 1, ../sass/_about.scss */
+section#about-me {
+  background: url("http://www.fillmurray.com/g/700/700");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+/* line 6, ../sass/_about.scss */
+section#about-me .wrapper {
+  padding: 50px 0 80px;
+  min-height: 500px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(73%, #3caeca), color-stop(100%, rgba(60, 174, 202, 0.8)));
+  background-image: -webkit-linear-gradient(left, #3caeca 73%, rgba(60, 174, 202, 0.8));
+  background-image: -moz-linear-gradient(left, #3caeca 73%, rgba(60, 174, 202, 0.8));
+  background-image: -o-linear-gradient(left, #3caeca 73%, rgba(60, 174, 202, 0.8));
+  background-image: linear-gradient(left, #3caeca 73%, rgba(60, 174, 202, 0.8));
+}
+/* line 12, ../sass/_about.scss */
+section#about-me .wrapper h1 {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 35px 0 0;
+}
+/* line 18, ../sass/_about.scss */
+section#about-me .wrapper p {
+  max-width: 447px;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* line 23, ../sass/_about.scss */
+section#about-me .wrapper p.intro {
+  font-size: 22px;
+  line-height: 28px;
+}
+/* line 28, ../sass/_about.scss */
+section#about-me .wrapper p a {
+  border-bottom: 1px dotted #fff;
+}
+/* line 31, ../sass/_about.scss */
+section#about-me .wrapper p a:hover {
+  background-color: rgba(44, 63, 73, 0.3);
+}
+/* line 38, ../sass/_about.scss */
+section#about-me .wrapper .social-networks {
+  padding: 0;
+  margin: 10px 0;
+}
+/* line 42, ../sass/_about.scss */
+section#about-me .wrapper .social-networks li {
+  display: block;
+}
+
+/* line 1, ../sass/_work.scss */
+section#work {
+  background-color: #161616;
+  padding: 50px 0 80px;
+}
+/* line 6, ../sass/_work.scss */
+section#work h1 {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 35px 0 0;
+}
+/* line 12, ../sass/_work.scss */
+section#work p {
+  max-width: 447px;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* line 17, ../sass/_work.scss */
+section#work p.intro {
+  font-size: 22px;
+  line-height: 28px;
+}
+/* line 22, ../sass/_work.scss */
+section#work p a {
+  border-bottom: 1px dotted #fff;
+}
+/* line 25, ../sass/_work.scss */
+section#work p a:hover {
+  background-color: rgba(44, 63, 73, 0.3);
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -67,43 +406,37 @@ footer {
 }
 
 /* Base */
-/* line 11, ../sass/main.scss */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 15, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
 * {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 19, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 body {
-  background: #333;
+  background: #161616;
   padding: 0;
-  margin: 0;
   overflow: hidden;
+  border: 1px solid transparent;
+  color: #fff;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 canvas, img {
   max-width: 100%;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Arbutus Slab', serif;
   color: white;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 div, span, p {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 a {
   color: #fff;
   text-decoration: none;

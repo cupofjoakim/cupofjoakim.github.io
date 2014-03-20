@@ -1,6 +1,7 @@
 // Cudos to Yash Bhardwaj for his pen over at http://codepen.io/yashbhardwaj/pen/EBFxA which is the base to what I've done for the landing.
 
 $(document).ready(function(){
+
     window.requestAnimFrame = (function(){
       return  window.requestAnimationFrame       || 
               window.webkitRequestAnimationFrame || 
@@ -11,6 +12,10 @@ $(document).ready(function(){
                 window.setTimeout(callback, 1000 / 60);
               };
     })();
+
+    var setSectionHeight = function(){
+        //$('section').height(window.innerHeight);
+    }
 
     var canvas = document.getElementById("landing-canvas");
 
@@ -30,7 +35,7 @@ $(document).ready(function(){
             dist;
 
         function paintCanvas() {
-            ctx.fillStyle = "rgba(0,0,0,1)";
+            ctx.fillStyle = "rgba(22,22,22,1)";
             ctx.fillRect(0,0,W,H);
         }
 
@@ -44,7 +49,7 @@ $(document).ready(function(){
             this.radius = 5;
             
             this.draw = function() {
-                ctx.fillStyle = "rgba(100,100,100,1)";
+                ctx.fillStyle = "rgba(44,63,73,1)";
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
                 
@@ -57,15 +62,17 @@ $(document).ready(function(){
         }
 
         function draw() {
-            
-            paintCanvas();
-            
-            for (var i = 0; i < particles.length; i++) {
-                p = particles[i];
-                p.draw();
+            // Make sure not to draw canvas if it's not within viewport
+            if($(document).scrollTop() < ($('.landing').height() + $('.landing').offset().top)){
+                paintCanvas();
+                
+                for (var i = 0; i < particles.length; i++) {
+                    p = particles[i];
+                    p.draw();
+                }
+                
+                update();
             }
-            
-            update();
         }
 
         function update() {
@@ -108,7 +115,7 @@ $(document).ready(function(){
             if(dist <= minDist) {
                 
                 ctx.beginPath();
-                ctx.strokeStyle = "rgba(100,100,100,"+ (1.2-dist/minDist) +")";
+                ctx.strokeStyle = "rgba(44,63,73,"+ (1.2-dist/minDist) +")";
                 ctx.moveTo(p1.x, p1.y);
                 ctx.lineTo(p2.x, p2.y);
                 ctx.stroke();
@@ -135,14 +142,17 @@ $(document).ready(function(){
 
     var clearCanvas = function(){
         $(canvas).remove();
-        $('.main-cont').prepend(canvas);
+        $('.landing').prepend(canvas);
     }
 
     $(window).on('resize', function(){
+        setSectionHeight();
         clearCanvas();
         startAnimation();
     });
 
+    $('.canvas-overlay').addClass('shown');
+    setSectionHeight();
     startAnimation(); 
 
 });
