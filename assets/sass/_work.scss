@@ -21,9 +21,10 @@ section#work {
 
         a {
             border-bottom: 1px dotted #fff;
+            @include single-transition(background-color, 0.3s, ease);
 
             &:hover {
-                background-color: rgba(44,63,73,0.3);
+                background-color: rgba(44,63,73,1);
             }
         }
     }

@@ -43,3 +43,17 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+.mobile-only {
+    display: none;
+    @media (max-width:768px) {
+        display: block;
+    }
+}
+
+.desktop-only {
+    display: none;
+    @media (min-width:768px) {
+        display: block;
+    }
+}

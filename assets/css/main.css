@@ -352,17 +352,21 @@ section#about-me .wrapper p.intro {
 /* line 28, ../sass/_about.scss */
 section#about-me .wrapper p a {
   border-bottom: 1px dotted #fff;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
-/* line 31, ../sass/_about.scss */
+/* line 32, ../sass/_about.scss */
 section#about-me .wrapper p a:hover {
   background-color: rgba(44, 63, 73, 0.3);
 }
-/* line 38, ../sass/_about.scss */
+/* line 39, ../sass/_about.scss */
 section#about-me .wrapper .social-networks {
   padding: 0;
   margin: 10px 0;
 }
-/* line 42, ../sass/_about.scss */
+/* line 43, ../sass/_about.scss */
 section#about-me .wrapper .social-networks li {
   display: block;
 }
@@ -392,10 +396,14 @@ section#work p.intro {
 /* line 22, ../sass/_work.scss */
 section#work p a {
   border-bottom: 1px dotted #fff;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
-/* line 25, ../sass/_work.scss */
+/* line 26, ../sass/_work.scss */
 section#work p a:hover {
-  background-color: rgba(44, 63, 73, 0.3);
+  background-color: #2c3f49;
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -440,4 +448,26 @@ div, span, p {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+/* line 47, ../sass/main.scss */
+.mobile-only {
+  display: none;
+}
+@media (max-width: 768px) {
+  /* line 47, ../sass/main.scss */
+  .mobile-only {
+    display: block;
+  }
+}
+
+/* line 54, ../sass/main.scss */
+.desktop-only {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 54, ../sass/main.scss */
+  .desktop-only {
+    display: block;
+  }
 }
