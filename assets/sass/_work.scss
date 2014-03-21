@@ -2,12 +2,11 @@ section#work {
     background-color: #161616;
     padding: 50px 0 80px;
 
-
     h1 {
-            font-size: 40px;
-            line-height: 40px;
-            margin: 35px 0 0;
-        }
+        font-size: 40px;
+        line-height: 40px;
+        margin: 35px 0 0;
+    }
 
     p {
         max-width: 447px;
@@ -25,6 +24,68 @@ section#work {
 
             &:hover {
                 background-color: rgba(44,63,73,1);
+            }
+        }
+    }
+
+    .people {
+
+        h2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: normal;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                border-bottom: 3px solid rgba(255,255,255,0);
+                display:inline-block;
+                text-align: center;
+                width: 150px;
+                height: 190px;
+                @include single-transition(border-bottom, 0.3s, ease);
+
+                &:first-child {
+                    margin-right: 0px;
+                }
+
+                a {
+                    overflow: hidden;
+                }
+
+                img {
+                    -webkit-box-sizing: content-box;
+                    -moz-box-sizing: content-box;
+                    box-sizing: content-box;
+                    border: 3px solid #161616;
+                    margin: 0px auto;
+                    display:block;
+                    width: 85px;
+                    border-radius: 55px;
+                    @include single-transition(all, 0.3s, ease);
+                }
+
+                .name {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin: 12px 0;
+                }
+
+                .title {
+                    font-size: 12px;
+                    color: #6D6969;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid rgba(255,255,255,1);
+
+                    img {
+                        border: 3px solid #fff;
+                    }
+                }
             }
         }
     }

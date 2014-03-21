@@ -1,7 +1,6 @@
 // Cudos to Yash Bhardwaj for his pen over at http://codepen.io/yashbhardwaj/pen/EBFxA which is the base to what I've done for the landing.
 
 $(document).ready(function(){
-
     window.requestAnimFrame = (function(){
       return  window.requestAnimationFrame       || 
               window.webkitRequestAnimationFrame || 
@@ -13,8 +12,20 @@ $(document).ready(function(){
               };
     })();
 
-    var setSectionHeight = function(){
-        //$('section').height(window.innerHeight);
+    var menuHandler = {
+        menuElem: $('.nav-overlay'), 
+        toggle: function(){
+            $(menuHandler.menuElem).toggleClass('shown');
+        },
+        init: function(){
+            $('.toggle-nav').on('click', menuHandler.toggle);
+            $('.close-nav').on('click', menuHandler.toggle);
+            $(document).keypress(function(e) {
+                if(e.which == 13) {
+                    menuHandler.toggle();
+                }
+            });   
+        }
     }
 
     var canvas = document.getElementById("landing-canvas");
@@ -145,14 +156,14 @@ $(document).ready(function(){
         $('.landing').prepend(canvas);
     }
 
+    //Handle Resizing for canvas animation
     $(window).on('resize', function(){
-        setSectionHeight();
         clearCanvas();
         startAnimation();
     });
 
     $('.canvas-overlay').addClass('shown');
-    setSectionHeight();
-    startAnimation(); 
+    startAnimation();
+    menuHandler.init();
 
 });
