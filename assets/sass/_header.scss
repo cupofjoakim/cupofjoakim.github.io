@@ -1,15 +1,12 @@
 header {
-    position: absolute;
-    width: 100%;
-
-    div {
-        float: left;
-    }
+    position: fixed;
+    right: 0;
 
     .toggle-nav {
-        float: right;
+        display: inline-block;
+        position: relative;
         width: 80px;
-        background: #222;
+        background: #3caeca;
         padding: 20px 20px 12px;
         margin: 20px;
         cursor: pointer;
@@ -19,6 +16,35 @@ header {
             height: 8px;
             margin-bottom:8px;
             background: #fff;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            border: #3caeca solid 4px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-transition-duration: .3s;
+            -moz-transition-duration: .3s;
+            -o-transition-duration: .3s;
+            -ms-transition-duration: .3s;
+            transition-duration: .3s;
+            -webkit-transition-property: top, right, bottom, left;
+            -moz-transition-property: top, right, bottom, left;
+            -ms-transition-property: top, right, bottom, left;
+            -o-transition-property: top, right, bottom, left;
+            transition-property: top, right, bottom, left;
+        }
+
+        &:hover {
+            &:before {
+                top: -10px;
+                right: -10px;
+                bottom: -10px;
+                left: -10px;
+            }
         }
     }
 }
