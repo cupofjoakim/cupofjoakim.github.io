@@ -11,6 +11,7 @@
 @import "_landing.scss";
 @import "_about.scss";
 @import "_work.scss";
+@import "_articles.scss";
 @import "_footer.scss";
 
 
@@ -22,7 +23,6 @@
 body {
     background: #161616;
     padding: 0;
-    overflow: hidden;
     border: 1px solid transparent;
     color: #fff;
 }

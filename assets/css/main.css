@@ -318,7 +318,7 @@ header .toggle-nav:hover:before {
   background: #3caeca;
 }
 /* line 37, ../sass/_nav.scss */
-.nav-overlay a {
+.nav-overlay a.nav-item {
   height: 150px;
   padding: 38px 30px;
   -webkit-transition: all 0.3s ease;
@@ -327,23 +327,44 @@ header .toggle-nav:hover:before {
   transition: all 0.3s ease;
 }
 /* line 43, ../sass/_nav.scss */
-.nav-overlay a .title {
+.nav-overlay a.nav-item .title {
   display: block;
   font-size: 32px;
   font-style: italic;
 }
 /* line 50, ../sass/_nav.scss */
-.nav-overlay a .subtitle {
+.nav-overlay a.nav-item .subtitle {
   display: block;
   color: #A2A2A2;
 }
 /* line 55, ../sass/_nav.scss */
-.nav-overlay a:hover {
+.nav-overlay a.nav-item:hover {
   background: #3caeca;
 }
 /* line 58, ../sass/_nav.scss */
-.nav-overlay a:hover .subtitle {
+.nav-overlay a.nav-item:hover .subtitle {
   color: #fff;
+}
+/* line 65, ../sass/_nav.scss */
+.nav-overlay .social-icons {
+  padding: 38px 20px;
+}
+/* line 68, ../sass/_nav.scss */
+.nav-overlay .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 78, ../sass/_nav.scss */
+.nav-overlay .social-icons a:hover {
+  background: #3caeca;
 }
 
 /* line 2, ../sass/_landing.scss */
@@ -587,6 +608,42 @@ section#work .people ul li:hover img {
   border: 3px solid #fff;
 }
 
+/* line 1, ../sass/_articles.scss */
+section#articles-frontpage {
+  background-color: #fff;
+  padding: 50px 0 120px;
+}
+/* line 5, ../sass/_articles.scss */
+section#articles-frontpage h1 {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 35px 0 0;
+  color: #161616;
+}
+/* line 12, ../sass/_articles.scss */
+section#articles-frontpage p {
+  max-width: 447px;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* line 17, ../sass/_articles.scss */
+section#articles-frontpage p.intro {
+  font-size: 22px;
+  line-height: 28px;
+}
+/* line 22, ../sass/_articles.scss */
+section#articles-frontpage p a {
+  border-bottom: 1px dotted #fff;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+/* line 26, ../sass/_articles.scss */
+section#articles-frontpage p a:hover {
+  background-color: #2c3f49;
+}
+
 /* line 1, ../sass/_footer.scss */
 .footer-container {
   background: #3caeca;
@@ -613,16 +670,15 @@ section#work .people ul li:hover img {
 }
 
 /* Base */
-/* line 18, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 * {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 body {
   background: #161616;
   padding: 0;
-  overflow: hidden;
   border: 1px solid transparent;
   color: #fff;
 }

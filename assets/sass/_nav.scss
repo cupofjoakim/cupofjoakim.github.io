@@ -34,7 +34,7 @@
     }
     
 
-    a {
+    a.nav-item {
         height: 150px;
         padding: 38px 30px;
         @include single-transition(all, 0.3s, ease);
@@ -60,5 +60,24 @@
             }
         }
 
+    }
+
+    .social-icons {
+        padding: 38px 20px;
+
+        a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            @include single-transition(all, 0.3s, ease);
+            
+            text-align: center;
+            line-height: 30px;
+
+            &:hover{
+                background: rgba(60,174,202,1);
+            }
+        }
     }
 }
