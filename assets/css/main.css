@@ -227,8 +227,9 @@ body {
 header {
   position: fixed;
   right: 0;
+  z-index: 8888;
 }
-/* line 5, ../sass/_header.scss */
+/* line 6, ../sass/_header.scss */
 header .toggle-nav {
   display: inline-block;
   position: relative;
@@ -238,14 +239,14 @@ header .toggle-nav {
   margin: 20px;
   cursor: pointer;
 }
-/* line 14, ../sass/_header.scss */
+/* line 15, ../sass/_header.scss */
 header .toggle-nav .bar {
   width: 100%;
   height: 8px;
   margin-bottom: 8px;
   background: #fff;
 }
-/* line 21, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 header .toggle-nav:before {
   content: '';
   position: absolute;
@@ -265,7 +266,7 @@ header .toggle-nav:before {
   -o-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
-/* line 42, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 header .toggle-nav:hover:before {
   top: -10px;
   right: -10px;
