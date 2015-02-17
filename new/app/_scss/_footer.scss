@@ -1,0 +1,22 @@
+.footer-container {
+    background: #3caeca;
+    display: block;
+    cursor: pointer;
+    height: 100px;
+
+    // .grid-pad {
+    //     padding: 0px;
+    // }
+    
+    .super-link {
+        font-size: 30px;
+        line-height: 100px;
+        @include vendor-prefix(transition, transform 0.3s ease);
+    }
+
+    &:hover {
+        .super-link {
+            @include vendor-prefix(transform, translateX(20px));
+        }
+    }
+}

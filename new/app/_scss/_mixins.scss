@@ -1,0 +1,14 @@
+@mixin from-borders($val) {
+    top: $val;
+    left: $val;
+    bottom: $val;
+    right: $val;
+}
+
+@mixin vendor-prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}

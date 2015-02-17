@@ -4,6 +4,7 @@
 // @import "compass";
 
 @import "_simplegrid.scss";
+@import "_mixins.scss";
 
 @import "_buttons.scss";
 @import "_header.scss";
@@ -31,7 +32,7 @@ canvas, img {
     max-width: 100%;
 }
 
-#{headings()} {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Arbutus Slab', serif;
     color: white;
 }
@@ -41,7 +42,6 @@ div, span, p {
 }
 
 a {
-    color: #fff;
     text-decoration: none;
 }
 
