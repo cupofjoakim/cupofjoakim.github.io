@@ -2,7 +2,7 @@
 layout: post
 date: 2014-03-03
 title:  Welcome to Jekyll!
-categories: jekyll
+categories: articles
 type: article
 ---
 

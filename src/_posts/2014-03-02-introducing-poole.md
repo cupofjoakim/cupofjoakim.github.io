@@ -2,7 +2,7 @@
 layout: post
 date: 2014-03-02
 title: Introducing Poole
-categories: jekyll poole
+categories: articles
 type: article
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 date: 2014-01-03
 title:  GetSwish.se
-categories: jekyll work
+categories: cases
 type: case
 ---
 

@@ -12,7 +12,7 @@ destination: serve
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 author:
-  name: Joakim
+  name: Joakim Wimmerstedt
   email: joakim.wimmerstedt@hyperisland.se
   bio: Front-End Developer with a focus on performance and usability. I also brew beer.
   twitter: twitter.com/cupofjoakim
@@ -32,7 +32,7 @@ limit_posts: 10
 # Permalink structure and pagination options
 relative_permalinks: true
 permalink: pretty
-paginate: 10
+paginate: 300
 paginate_path: 'page:num'
 excerpt_separator: '<!--more-->'
 
