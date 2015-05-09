@@ -9,14 +9,13 @@ The main SCSS file for everything, yep
       position: absolute;
       top: 0;
       left: 0;
-      bottom: 0;
-      overflow: scroll; }
+      bottom: 0; }
     .fifty.righty, .righty.pagination-item {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
-      overflow: scroll; } }
+      overflow-y: scroll; } }
 
 .main-cont {
   width: 100%; }
