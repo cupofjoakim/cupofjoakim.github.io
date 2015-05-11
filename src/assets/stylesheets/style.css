@@ -169,52 +169,52 @@ a {
       opacity: 0;
       pointer-events: none; }
 
-.posts {
+.posts, article.main {
   width: 100%;
   margin-top: 100px; }
   @media (max-width: 1120px) {
-    .posts {
+    .posts, article.main {
       margin-top: 90px; } }
-  .posts .post {
+  .posts .post, article.main .post {
     width: 100%;
     margin-bottom: 65px;
     margin-top: 65px;
     font-size: 16px; }
     @media (max-width: 1120px) {
-      .posts .post {
+      .posts .post, article.main .post {
         margin-bottom: 50px;
         margin-top: 50px; } }
-    .posts .post .post-wrap {
+    .posts .post .post-wrap, article.main .post .post-wrap {
       width: 520px;
       margin: 0 auto; }
       @media (max-width: 1120px) {
-        .posts .post .post-wrap {
+        .posts .post .post-wrap, article.main .post .post-wrap {
           width: 50%;
           min-width: 280px; } }
-    .posts .post .post-date {
+    .posts .post .post-date, article.main .post .post-date {
       font-family: 'Droid Sans', sans-serif;
       color: #4F5A63; }
-    .posts .post .post-cat {
+    .posts .post .post-cat, article.main .post .post-cat {
       font-family: 'Droid Sans', sans-serif;
       color: #F5A623;
       text-transform: capitalize; }
-    .posts .post h1.post-title {
+    .posts .post h1.post-title, article.main .post h1.post-title {
       margin-top: 5px;
       margin-bottom: 8px;
       font-size: 28px; }
-      .posts .post h1.post-title:hover a {
+      .posts .post h1.post-title:hover a, article.main .post h1.post-title:hover a {
         color: #F5A623; }
-    .posts .post p {
+    .posts .post p, article.main .post p {
       line-height: 24px;
       margin: 0 0 30px 0; }
-    .posts .post .arrow {
+    .posts .post .arrow, article.main .post .arrow {
       display: block;
       line-height: 12px;
       font-size: 24px;
       color: #4F5A63; }
-      .posts .post .arrow:hover {
+      .posts .post .arrow:hover, article.main .post .arrow:hover {
         color: #F5A623; }
-    .posts .post.case {
+    .posts .post.case, article.main .post.case {
       margin-bottom: 0px;
       margin-top: 0px;
       background-size: cover;
@@ -224,11 +224,11 @@ a {
       color: #fff;
       position: relative;
       overflow: hidden; }
-      .posts .post.case .post-date, .posts .post.case .post-title {
+      .posts .post.case .post-date, .posts .post.case .post-title, article.main .post.case .post-date, article.main .post.case .post-title {
         color: #fff; }
-      .posts .post.case p {
+      .posts .post.case p, article.main .post.case p {
         margin: 0; }
-      .posts .post.case .overlay {
+      .posts .post.case .overlay, article.main .post.case .overlay {
         position: absolute;
         top: 0;
         height: 500px;
@@ -236,8 +236,8 @@ a {
         background-color: rgba(74, 144, 226, 0.6);
         -webkit-transition: .3s ease background-color;
                 transition: .3s ease background-color; }
-      .posts .post.case .post-wrap {
+      .posts .post.case .post-wrap, article.main .post.case .post-wrap {
         position: relative;
         z-index: 30; }
-      .posts .post.case:hover .overlay {
+      .posts .post.case:hover .overlay, article.main .post.case:hover .overlay {
         background-color: rgba(74, 144, 226, 0.9); }
