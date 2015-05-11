@@ -241,3 +241,43 @@ a {
         z-index: 30; }
       .posts .post.case:hover .overlay, article.main .post.case:hover .overlay {
         background-color: rgba(74, 144, 226, 0.9); }
+
+article.main img, article.main pre > code {
+  width: 100%;
+  display: block; }
+  @media (min-width: 1600px) {
+    article.main img, article.main pre > code {
+      width: 700px;
+      margin-left: -90px; } }
+  @media (min-width: 1340px) and (max-width: 1600px) {
+    article.main img, article.main pre > code {
+      width: 600px;
+      margin-left: -40px; } }
+  @media (min-width: 500px) and (max-width: 1120px) {
+    article.main img, article.main pre > code {
+      width: 150%;
+      margin-left: -25%; } }
+article.main pre {
+  overflow: visible; }
+article.main pre > code {
+  max-width: 100%;
+  overflow: scroll; }
+  @media (min-width: 1600px) {
+    article.main pre > code {
+      max-width: 700px; } }
+  @media (min-width: 1340px) and (max-width: 1600px) {
+    article.main pre > code {
+      max-width: 600px; } }
+  @media (min-width: 500px) and (max-width: 1120px) {
+    article.main pre > code {
+      max-width: 150%; } }
+article.main .post .post-wrap h1.post-title {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }

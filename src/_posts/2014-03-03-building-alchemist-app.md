@@ -4,10 +4,10 @@ date: 2014-03-03
 title: Building Alchemist App
 categories: articles
 type: article
+excerpt: "In November 2014 me and a collegue set out to build our first iOS app – and learn Swift as we went along. This article serves as a summary of what two js-loving front-enders learnt while moving into native territory."
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-<!--more-->
 
 We've also added a lot of different settings for [Redcarpet][redcarpet],
 including being able to ^superscript, _underline_, ==highlight==,

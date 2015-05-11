@@ -4,10 +4,11 @@ date: 2013-04-04
 title:  Wonder World Fur
 categories: cases
 type: case
+excerpt: "A campaign site for WWF that sold fur items from made up animals."
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-<!--more-->
+<!--- more -->
 
 We've also added a lot of different settings for [Redcarpet][redcarpet],
 including being able to ^superscript, _underline_, ==highlight==,

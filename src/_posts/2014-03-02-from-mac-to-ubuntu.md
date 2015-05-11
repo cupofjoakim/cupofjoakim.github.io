@@ -4,54 +4,33 @@ date: 2014-03-02
 title: From Mac to Ubuntu
 categories: articles
 type: article
+excerpt: "Linux is everywhere. It's on our servers, in our virtual machines and on our game consoles. I set out into a journey to see if I could replace OS X with a new version of Ubuntu and still work as a front-end developer effectively. Spoiler: It's almost possible."
 ---
 
-The Strange Case of Dr. Jeykll and Mr. Hyde* tells the story of a lawyer
-investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward
-Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole,
-Dr. Jekyll's loyal butler.
-<!--more-->
+When I grew up in the woods of Sweden I often entertained myself through going on various nerdy endeavours. I read fantasy novels, played Dungeons and Dragons and even melted my moms' motherboard after overclocking the integrated graphics card too much. Sorry mom.
 
-Poole is the butler for [Jekyll](http://jekyllrb.com), the static site
-generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to
-provide a clear and concise foundational setup for any Jekyll site. It does so
-by furnishing a full vanilla Jekyll install with example templates, pages,
-posts, and styles.
+I also tried out Linux a couple of times. Every time I did I would get really excited while the chosen distro was downloading – only to be upset when I failed to install the propper drivers or fucked something else up. 
 
-There are currently two themes built on Poole:
+Fast forward to 2015. I've now been working as a front-end developer for a couple of years. Linux distros seem to have matured quite a bit. Some governmental institutions are actually [replacing Windows desktops with Ubuntu](http://www.linuxinsider.com/rsstory/74715.html)! Almost all the tools I use are built in ruby and node, both of which are available in linux. Could I replace my OS X life with Ubuntu? Experimention time!
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## Installing the OS
+For the sake of the safety (and my job) I used my stationary desktop computer for the experiment. It's two years Old, but is running Windows 10 with a haswell processor and a Nvidia GeForce GTX 760.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Setting up for development
 
-### What's included
+* Git
+* Node
+* Ruby
+* Sublime Text
+* PHP
 
-Poole is a streamlined Jekyll site designed and built as a foundation for
-building more meaningful themes. Poole, and every theme built on it, includes
-the following:
+##
 
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS
-  feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet
-  highlighter)
+## Extra: Non-work use
+You can't work all the time
 
-Additional features are available in individual themes.
+### Multimedia
+Thank god for HTML5 Video.
 
-### Browser support
-
-Poole and it's themes are by preference a forward-thinking project. In addition
-to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it
-is only compatible with Internet Explorer 9 and above.
-
-### Download
-
-Poole is developed on and hosted with GitHub. Head to the <a
-href="https://github.com/poole/poole">GitHub repository</a> for downloads, bug
-reports, and features requests.
-
-Thanks!
+### Gaming
+Well, the library of Linux friendly steam titles are definitely growing.
