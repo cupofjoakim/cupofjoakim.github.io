@@ -15,3 +15,10 @@ $orange: #F5A623;
 @import "profile";
 @import "posts";
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
