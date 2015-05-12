@@ -19,10 +19,7 @@ var bs;
 var browserify = require('browserify');
 
 
-gulp.task('js', ["styles"], bundle); // so you can run `gulp js` to build the file
-function bundle() {
-  return $.shell.task('browserify ./src/assets/javascript/javascript.js > ./serve/assets/javascript/bundle.js');
-}
+gulp.task('js', ["styles"], $.shell.task('browserify ./src/assets/javascript/javascript.js -o ./serve/assets/javascript/bundle.js -d'));
 
 
 
