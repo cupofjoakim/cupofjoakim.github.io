@@ -16,6 +16,17 @@ var reload = browserSync.reload;
 // And define a variable that BrowserSync uses in it"s function
 var bs;
 
+var browserify = require('browserify');
+
+
+gulp.task('js', ["styles"], bundle); // so you can run `gulp js` to build the file
+function bundle() {
+  return $.shell.task('browserify ./src/assets/javascript/javascript.js > ./serve/assets/javascript/bundle.js');
+}
+
+
+
+
 // Deletes the directory that is used to serve the site during development
 gulp.task("clean:dev", del.bind(null, ["serve"]));
 
@@ -33,6 +44,8 @@ gulp.task("jekyll-rebuild", ["jekyll:dev"], function () {
 // that overwrites some of the settings in the regular configuration so that you
 // don"t end up publishing your drafts or future posts
 gulp.task("jekyll:prod", $.shell.task("jekyll build --config _config.yml,_config.build.yml"));
+
+
 
 // Compiles the SASS files and moves them into the "assets/stylesheets" directory
 gulp.task("styles", function () {
@@ -79,13 +92,11 @@ gulp.task("copy", function () {
 });
 
 // Optimizes all the CSS, HTML and concats the JS etc
-gulp.task("html", ["styles"], function () {
+gulp.task("html", ["js"], function () {
   var assets = $.useref.assets({searchPath: "serve"});
 
   return gulp.src("serve/**/*.html")
     .pipe(assets)
-    // Concatenate JavaScript files and preserve important comments
-    .pipe($.if("*.js", $.uglify({preserveComments: "some"})))
     // Minify CSS
     .pipe($.if("*.css", $.minifyCss()))
     // Start cache busting the files
@@ -137,7 +148,7 @@ gulp.task("doctor", $.shell.task("jekyll doctor"));
 // BrowserSync will serve our site on a local server for us and other devices to use
 // It will also autoreload across all devices as well as keep the viewport synchronized
 // between them.
-gulp.task("serve:dev", ["styles", "jekyll:dev"], function () {
+gulp.task("serve:dev", ["js", "jekyll:dev"], function () {
   bs = browserSync({
     notify: true,
     // tunnel: "",
@@ -153,6 +164,7 @@ gulp.task("watch", function () {
   gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js"], ["jekyll-rebuild"]);
   gulp.watch(["serve/assets/stylesheets/*.css"], reload);
   gulp.watch(["src/assets/scss/**/*.scss"], ["styles"]);
+  gulp.watch(["src/assets/javascript/**/*.js"], ["js"]);
 });
 
 // Serve the site after optimizations to see that everything looks fine
