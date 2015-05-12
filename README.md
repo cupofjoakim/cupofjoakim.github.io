@@ -7,6 +7,6 @@ Dependencies:
 * browserify
 
 Installation:
-1. checkout
-2. `npm install`
-3. `gulp`
+1.  checkout
+2.  `npm install`
+3.  `gulp`
