@@ -64,6 +64,23 @@ a {
   height: 90px;
   width: 100%; }
 
+.bar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(200, 200, 200, 0.5);
+  padding: 0 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold; }
+  .bar .back {
+    color: #4F5A63; }
+    .bar .back:hover {
+      color: #F5A623; }
+
 .profile {
   background: #4A90E2;
   font-family: 'Droid Sans', sans-serif; }
