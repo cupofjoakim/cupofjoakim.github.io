@@ -18,8 +18,17 @@ var bs;
 
 var browserify = require('browserify');
 
+var uglify = require('gulp-uglify');
 
-gulp.task('js', ["styles"], $.shell.task('browserify ./src/assets/javascript/javascript.js -o ./serve/assets/javascript/bundle.js -d'));
+
+gulp.task('js', ["styles"], function(){
+  
+  $.shell.task('browserify ./src/assets/javascript/javascript.js -o ./serve/assets/javascript/bundle.js -d')
+
+  return gulp.src('./serve/assets/javascript/bundle.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./serve/assets/javascript'));
+});
 
 
 
