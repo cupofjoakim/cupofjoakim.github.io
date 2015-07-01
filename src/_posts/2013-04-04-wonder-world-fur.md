@@ -1,36 +1,30 @@
 ---
 layout: post
-date: 2013-04-04
+date: 2015-07-01
 title:  Wonder World Fur
 categories: cases
 type: case
-excerpt: "A campaign site for WWF that sold fur items from made up animals."
+excerpt: "A campaign site for WWF that sold fur items from imaginary animals."
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-<!--- more -->
+During my internship at Stink Digital back in late 2012 I was part of the two man developer team who built the Wonder World Fur campaign site. Wonder World Fur was a brand that WWF started, where they sold furs from 100% imaginary animals.
 
-We've also added a lot of different settings for [Redcarpet][redcarpet],
-including being able to ^superscript, _underline_, ==highlight==,
-~~strikethrough~~, and footnotes.[^1] It even automatically makes links into
-URLs: www.jekyllrb.com and you can put multiple underscores in words without
-them leaning all over the place: this_word_has_underscores. It'll also make your
-quotes look nice, like this: "hoho", your dashes and hypens will be dashing too:
----/--.
+Our team consisted of [Ian Hart][ian] and me from the London office and [Charlie Montagut][charlie] from the then newly opened Paris office. I was in charge of most of the front-end. The Project was awarded with a [FWA SOTD award in April 2013][fwa].
 
-Jekyll also offers powerful support for code snippets:
+The site in itself used autoplaying fullscreen videos. These ranged from subtle cinemagraphs to the campaign trailer.
 
-{% highlight javascript %}
-var definition = 0;
+![Wonder World Fur utilized autoplaying fullscreen videos.]({{ site.url }}/assets/post-images/wwf-video.jpg)
 
-var functionOfImportance = function(){
-  console.log("shitdickles");  
-};
-{% endhighlight %}
+The site also featured some very balanced animations for entry and hover effects to highlight the imagery and the products. These can't be showcased propperly since no screen recordings from when the site was up has been saved.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of
-Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+![Wonder World Fur used a grid to let imagery speak instead of text.]({{ site.url }}/assets/post-images/wwf-grid.jpg)
 
-[redcarpet]: https://github.com/vmg/redcarpet
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Each of the imaginary animals had information panels where you could learn more about them. You could watch a 3D-rendered video to see what they would look like in action, listen to the different sounds the animal could make or just read a description.
+
+![Each of the imaginary animals had information panels where you could learn more about them]({{ site.url }}/assets/post-images/wwf-info.jpg)
+
+The site has sadly gone off the web since it was online, but you could still see it it's FWA award: http://www.thefwa.com/site/wonder-world-fur
+
+[ian]: http://ianmadethis.com/
+[charlie]: http://www.charlie-montagut.com/
+[fwa]: http://www.thefwa.com/site/wonder-world-fur
