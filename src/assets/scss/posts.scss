@@ -37,6 +37,15 @@
         margin-bottom: 65px;
         margin-top: 65px;
         font-size: 16px;
+        overflow: hidden;
+
+        transition: .3s ease;
+        backface-visibility: hidden;
+
+        &.hidden {
+            transform: scale(0);
+            opacity: 0;
+        }
 
         @media (max-width: 1120px) {
             margin-bottom: 50px;
@@ -129,6 +138,7 @@
             }
 
         }
+        
     }
 }
 

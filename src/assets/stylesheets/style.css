@@ -196,7 +196,17 @@ a {
     width: 100%;
     margin-bottom: 65px;
     margin-top: 65px;
-    font-size: 16px; }
+    font-size: 16px;
+    overflow: hidden;
+    -webkit-transition: .3s ease;
+            transition: .3s ease;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; }
+    .posts .post.hidden, article.main .post.hidden {
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
+      opacity: 0; }
     @media (max-width: 1120px) {
       .posts .post, article.main .post {
         margin-bottom: 50px;
