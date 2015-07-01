@@ -1,2 +1,1 @@
-var a = require('./hej');
-console.log("laddad");
+var a = require('./post-filter');

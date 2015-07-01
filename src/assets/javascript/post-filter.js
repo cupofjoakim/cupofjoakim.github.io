@@ -1,15 +1,22 @@
-var $ = require('jquery');
+var $ = require('jquery'),
+    log = require('./logger.js'),
+    vel = require('velocity-animate');
 
 var hideArticles = function(exception){
     var posts = $('.post:not(.' + exception + ')');
-    posts.hide();
+    posts.addClass('hidden');
+    setTimeout(function(){
+        posts.hide();
+    }, 300);
 };
 
 var showArticles = function(){
-    $('.post').show()
+    $('.post').show();
+    //$('.post').removeClass('hidden');
 };
 
 $('.filter').find('li').on('click', function(e){
+
     showArticles();
 
     if ( $(this).hasClass("filter-button-cases") ){
@@ -18,10 +25,13 @@ $('.filter').find('li').on('click', function(e){
 
     } else if ( $(this).hasClass("filter-button-articles") ) {
         
+
         hideArticles("article");
 
     }
 
 });
 
+
+log('Filter btns loaded');
 //module.exports = {};
