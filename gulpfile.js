@@ -17,18 +17,27 @@ var reload = browserSync.reload;
 var bs;
 
 var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 
 var uglify = require('gulp-uglify');
 
-
-gulp.task('js', ["styles"], function(){
-  
-  $.shell.task('browserify ./src/assets/javascript/javascript.js -o ./serve/assets/javascript/bundle.js -d')
-
-  return gulp.src('./serve/assets/javascript/bundle.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./serve/assets/javascript'));
+gulp.task('jspack', function() {
+    return browserify('./src/assets/javascript/javascript.js')
+        .bundle()
+        //Pass desired output filename to vinyl-source-stream
+        .pipe(source('bundle.js'))
+        // Start piping stream to tasks!
+        .pipe(gulp.dest('./.tmp/javascript/'));
 });
+
+// gulp.task('js', ["styles"], function(){
+  
+//   $.shell.task('browserify ./src/assets/javascript/javascript.js -o ./serve/assets/javascript/bundle.js -d')
+
+//   return gulp.src('./serve/assets/javascript/bundle.js')
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./serve/assets/javascript'));
+// });
 
 
 
@@ -42,8 +51,17 @@ gulp.task("clean:prod", del.bind(null, ["site"]));
 // Runs the build command for Jekyll to compile the site locally
 // This will build the site with the production settings
 gulp.task("jekyll:dev", $.shell.task("jekyll build"));
-gulp.task("jekyll-rebuild", ["jekyll:dev"], function () {
-  reload;
+
+
+
+gulp.task("jekyll-rebuild", ["jekyll:dev", "jspack", "styles"], function () {
+  console.log("reladd");
+  
+  gulp.src("./.tmp/javascript/bundle.js")
+    .pipe(gulp.dest("./serve/assets/javascript/"));
+
+  reload();
+
 });
 
 // Almost identical to the above task, but instead we load in the build configuration
@@ -64,9 +82,9 @@ gulp.task("styles", function () {
     .pipe(gulp.dest("src/assets/stylesheets/"))
     .pipe(gulp.dest("serve/assets/stylesheets/"))
     // Outputs the size of the CSS file
-    .pipe($.size({title: "styles"}))
+    .pipe($.size({title: "styles"}));
     // Injects the CSS changes to your browser since Jekyll doesn"t rebuild the CSS
-    .pipe(reload({stream: true}));
+    // .pipe(reload({stream: true}));
 });
 
 // Optimizes the images that exists
@@ -151,10 +169,21 @@ gulp.task("jslint", function () {
 // and will check for URL errors a well
 gulp.task("doctor", $.shell.task("jekyll doctor"));
 
+
+// These tasks will look for files that change while serving and will auto-regenerate or
+// reload the website accordingly. Update or add other files you need to be watched.
+gulp.task("watch", function () {
+  gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js", "src/assets/javascript/**/*.js", "src/assets/scss/**/*.scss"], ["jekyll-rebuild"]);
+});
+
+
 // BrowserSync will serve our site on a local server for us and other devices to use
 // It will also autoreload across all devices as well as keep the viewport synchronized
 // between them.
-gulp.task("serve:dev", ["js", "jekyll:dev"], function () {
+gulp.task("serve:dev", ["jekyll:dev", "jspack", "styles"], function () {
+  gulp.src("./.tmp/javascript/bundle.js")
+    .pipe(gulp.dest("./serve/assets/javascript/"));
+
   bs = browserSync({
     notify: true,
     // tunnel: "",
@@ -162,15 +191,6 @@ gulp.task("serve:dev", ["js", "jekyll:dev"], function () {
       baseDir: "serve"
     }
   });
-});
-
-// These tasks will look for files that change while serving and will auto-regenerate or
-// reload the website accordingly. Update or add other files you need to be watched.
-gulp.task("watch", function () {
-  gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js"], ["jekyll-rebuild"]);
-  gulp.watch(["serve/assets/stylesheets/*.css"], reload);
-  gulp.watch(["src/assets/scss/**/*.scss"], ["styles"]);
-  gulp.watch(["src/assets/javascript/**/*.js"], ["js"]);
 });
 
 // Serve the site after optimizations to see that everything looks fine

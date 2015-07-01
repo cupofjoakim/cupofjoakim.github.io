@@ -12,8 +12,13 @@ var hideArticles = function(exception){
 
 var showArticles = function(){
     $('.post').show();
-    //$('.post').removeClass('hidden');
+    $('.post').removeClass('hidden');
 };
+
+//asjkhd aaaq
+
+
+
 
 $('.filter').find('li').on('click', function(e){
 
