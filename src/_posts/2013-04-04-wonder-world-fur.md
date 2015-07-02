@@ -5,7 +5,7 @@ title:  Wonder World Fur
 categories: cases
 type: case
 gif: http://media.giphy.com/media/113EMjU66WPTKU/giphy.gif
-excerpt: "A WWF fashion campaign site for fur from imaginary animals."
+excerpt: "A WWF fashion campaign site for fur from imaginary animals. Built early 2013."
 ---
 
 During my internship at Stink Digital back in late 2012 I was part of the two man developer team who built the Wonder World Fur campaign site for the [World Wildlife Foundation][wwf](WWF). Wonder World Fur was a brand where WWF sold furs from 100% imaginary animals.
