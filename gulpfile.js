@@ -116,7 +116,7 @@ gulp.task("copy", function () {
 });
 
 // Optimizes all the CSS, HTML and concats the JS etc
-gulp.task("html", ["js"], function () {
+gulp.task("html", function () {
   var assets = $.useref.assets({searchPath: "serve"});
 
   return gulp.src("serve/**/*.html")
@@ -213,7 +213,10 @@ gulp.task("check", ["jslint", "doctor"], function () {
 });
 
 // Builds the site but doesn"t serve it to you
-gulp.task("build", ["jekyll:prod", "styles"], function () {});
+gulp.task("build", ["jekyll:prod", "jspack", "styles"], function () {
+  gulp.src("./.tmp/javascript/bundle.js")
+    .pipe(gulp.dest("./site/assets/javascript/"));
+});
 
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"

@@ -1,4 +1,4 @@
-shouldLog = true;
+shouldLog = false;
 
 module.exports = function(msg){
     if(shouldLog === true) {
