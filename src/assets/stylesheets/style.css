@@ -114,7 +114,8 @@ a {
     left: 50%;
     margin-left: -180px;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    line-height: 22px; }
     .profile .about > * {
       display: block; }
     .profile .about .name {
@@ -124,6 +125,12 @@ a {
       font-size: 20px; }
     .profile .about .position {
       margin-bottom: 40px; }
+    .profile .about a {
+      color: #333; }
+      .profile .about a:visited {
+        color: #333; }
+      .profile .about a:hover {
+        color: #F5A623; }
     .profile .about .external-links {
       list-style: none;
       padding: 0; }
