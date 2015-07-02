@@ -1,23 +1,26 @@
 var $ = require('jquery'),
     log = require('./logger.js'),
+    posts = $('.post'),
     vel = require('velocity-animate');
 
+var heightArr = [];
+
 var hideArticles = function(exception){
-    var posts = $('.post:not(.' + exception + ')');
-    posts.addClass('hidden');
-    setTimeout(function(){
-        posts.hide();
-    }, 300);
+    var chosenPosts = $('.post:not(.' + exception + ')');
+
+    //Specify height for animation to work
+    for (var i = 0; i < chosenPosts.length; i++) {
+        heightArr[i] = $(chosenPosts[i]).height();
+        $(chosenPosts[i]).height(heightArr[i]);
+    }
+
+    chosenPosts.addClass('hidden');
 };
 
 var showArticles = function(){
-    $('.post').show();
-    $('.post').removeClass('hidden');
+    posts.show();
+    posts.removeClass('hidden');
 };
-
-//asjkhd aaaq
-
-
 
 
 $('.filter').find('li').on('click', function(e){
@@ -37,6 +40,13 @@ $('.filter').find('li').on('click', function(e){
 
 });
 
+// Set non-hidden articles to height auto on browser resize
+$( window ).resize(function() {
+    for (var i = 0; i < posts.length; i++) {
+        if( !$(posts[i]).hasClass('hidden') ) {
+            posts.height('auto');
+        }
+    }
+});
 
 log('Filter btns loaded');
-//module.exports = {};

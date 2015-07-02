@@ -198,15 +198,14 @@ a {
     margin-top: 65px;
     font-size: 16px;
     overflow: hidden;
-    -webkit-transition: .3s ease;
-            transition: .3s ease;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden; }
     .posts .post.hidden, article.main .post.hidden {
-      -webkit-transform: scale(0);
-          -ms-transform: scale(0);
-              transform: scale(0);
-      opacity: 0; }
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important; }
     @media (max-width: 1120px) {
       .posts .post, article.main .post {
         margin-bottom: 50px;
@@ -234,6 +233,10 @@ a {
     .posts .post p, article.main .post p {
       line-height: 24px;
       margin: 0 0 30px 0; }
+      .posts .post p em, article.main .post p em {
+        opacity: .9;
+        margin-top: 10px;
+        display: inline-block; }
     .posts .post .arrow, article.main .post .arrow {
       display: block;
       line-height: 12px;
@@ -245,6 +248,7 @@ a {
       margin-bottom: 0px;
       margin-top: 0px;
       background-size: cover;
+      background-position: center center;
       display: block;
       padding-top: 52px;
       padding-bottom: 52px;

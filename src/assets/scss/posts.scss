@@ -39,12 +39,13 @@
         font-size: 16px;
         overflow: hidden;
 
-        transition: .3s ease;
+        transition: all .3s ease;
         backface-visibility: hidden;
 
         &.hidden {
-            transform: scale(0);
-            opacity: 0;
+            height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
         @media (max-width: 1120px) {
@@ -86,6 +87,13 @@
         p {
             line-height: 24px;
             margin: 0 0 30px 0;
+
+            em {
+                opacity: .9;
+                margin-top: 10px;
+                display: inline-block;
+            }
+
         }
 
         .arrow {
@@ -103,6 +111,7 @@
             margin-bottom: 0px;
             margin-top: 0px;
             background-size: cover;
+            background-position: center center;
             display: block;
             padding-top: 52px;
             padding-bottom: 52px;
