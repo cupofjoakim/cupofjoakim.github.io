@@ -26,13 +26,12 @@ Since the nature of my projects varies a lot there's a lot of stuff I can't real
 * PHP
 * Vagrant
 
-## 
+I had no real issues setting up these tools, as they're all available via package managers. **However, my workflow usually integrates photoshop or sketch as well. I still haven't found a good solution that problem.**
 
 ## Extra: Non-work use
-You can't work all the time.
 
 ### Making it feel good
-I'm a heavy user of multiple workspaces in OS X, s
+I'm a heavy user of multiple workspaces in OS X, so that
 
 ### Multimedia
 Thank god for HTML5 Video. Flash seems to be a natural enemy in linux environments.
