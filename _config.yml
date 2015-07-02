@@ -1,7 +1,7 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
 title: Joakim Wimmerstedt - Portfolio
-description: The portfolio of swedish front-end developer Joakim Wimmerstedt
+description: The portfolio and website of swedish front-end developer Joakim Wimmerstedt
 tagline: 
 url: http://localhost:3000
 
@@ -18,7 +18,7 @@ author:
   twitter: twitter.com/cupofjoakim
 
 # general setting for Jekyll
-googleAnalytics: UA-XXXXX-X
+googleAnalytics: UA-49166415-1
 
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
