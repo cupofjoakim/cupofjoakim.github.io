@@ -4,33 +4,13 @@
  <title>Joakim Wimmerstedt - Portfolio</title>
  <link href="http://cupofjoakim.github.io/atom.xml" rel="self"/>
  <link href="http://cupofjoakim.github.io/"/>
- <updated>2015-07-02T16:27:43+02:00</updated>
+ <updated>2015-07-02T16:40:23+02:00</updated>
  <id>http://cupofjoakim.github.io</id>
  <author>
    <name>Joakim Wimmerstedt</name>
    <email>joakim.wimmerstedt@hyperisland.se</email>
  </author>
 
- 
- <entry>
-   <title>Mabi.se</title>
-   <link href="http://cupofjoakim.github.io/cases/2015/07/02/mabi/"/>
-   <updated>2015-07-02T00:00:00+02:00</updated>
-   <id>http://cupofjoakim.github.io/cases/2015/07/02/mabi</id>
-   <content type="html">&lt;p&gt;My first live project using Angular.js was the website for &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi&lt;/a&gt;, one of the top rental car companies in Sweden. It was the biggest assignments I had over at &lt;a href=&quot;http://www.river.se&quot;&gt;River&lt;/a&gt; apart from a iAd campaign I did for Nike. I was the sole front end developer on this project, but some advanced features like figuring out the rules for the car filtration was definitely a team effort.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-landing.png&quot; alt=&quot;Image of the landing page.&quot;&gt;
-&lt;em&gt;Mabi had a lot of good imagery the designers could blow up for the banners.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-cars.png&quot; alt=&quot;Image of the cars section inside the booking flow.&quot;&gt;
-&lt;em&gt;The car filtration is where I definitely learned the most about directives as components, how ng-reapeats work as well as the limitations of angular.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-offices.png&quot; alt=&quot;Image of the offices page.&quot;&gt;
-&lt;em&gt;A customized google map that shows the closest rental spots was also a fun and quick exersice.&lt;/em&gt; &lt;/p&gt;
-
-&lt;p&gt;The site&amp;rsquo;s changed a lot since I left River in early 2014, but if you still want to check it out, just go to &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi.se.&lt;/a&gt;. A heads up though – it doesn&amp;rsquo;t seem like there&amp;rsquo;s support for higher resolutions than 1080p any more, so the background image is ugly if you&amp;rsquo;re on a big screen.&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>GetSwish.se</title>
@@ -128,6 +108,26 @@
 &lt;em&gt;Each of the imaginary animals had information panels where you could learn more about them. You could watch a 3D-rendered video to see what they would look like in action, listen to the different sounds the animal could make or just read a description.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The site has sadly gone off the web since it was online, but you could still see it it&amp;rsquo;s FWA award: &lt;a href=&quot;http://www.thefwa.com/site/wonder-world-fur&quot;&gt;http://www.thefwa.com/site/wonder-world-fur&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mabi.se</title>
+   <link href="http://cupofjoakim.github.io/cases/2015/06/30/mabi/"/>
+   <updated>2015-06-30T00:00:00+02:00</updated>
+   <id>http://cupofjoakim.github.io/cases/2015/06/30/mabi</id>
+   <content type="html">&lt;p&gt;My first live project using Angular.js was the website for &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi&lt;/a&gt;, one of the top rental car companies in Sweden. It was the biggest assignments I had over at &lt;a href=&quot;http://www.river.se&quot;&gt;River&lt;/a&gt; apart from a iAd campaign I did for Nike. I was the sole front end developer on this project, but some advanced features like figuring out the rules for the car filtration was definitely a team effort.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-landing.png&quot; alt=&quot;Image of the landing page.&quot;&gt;
+&lt;em&gt;Mabi had a lot of good imagery the designers could blow up for the banners.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-cars.png&quot; alt=&quot;Image of the cars section inside the booking flow.&quot;&gt;
+&lt;em&gt;The car filtration is where I definitely learned the most about directives as components, how ng-reapeats work as well as the limitations of angular.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-offices.png&quot; alt=&quot;Image of the offices page.&quot;&gt;
+&lt;em&gt;A customized google map that shows the closest rental spots was also a fun and quick exersice.&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;The site&amp;rsquo;s changed a lot since I left River in early 2014, but if you still want to check it out, just go to &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi.se.&lt;/a&gt;. A heads up though – it doesn&amp;rsquo;t seem like there&amp;rsquo;s support for higher resolutions than 1080p any more, so the background image is ugly if you&amp;rsquo;re on a big screen.&lt;/p&gt;
 </content>
  </entry>
  
