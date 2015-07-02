@@ -80,6 +80,9 @@ a {
     color: #4F5A63; }
     .bar .back:hover {
       color: #F5A623; }
+  @media (max-width: 1120px) {
+    .bar {
+      left: 0; } }
 
 .profile {
   background: #4A90E2;
@@ -148,6 +151,10 @@ a {
         margin: 0 auto 40px;
         text-align: center;
         color: #fff; } }
+    @media (max-width: 400px) {
+      .profile .about {
+        width: 100%;
+        padding: 0 20px; } }
 
 @-webkit-keyframes float {
   from {
@@ -185,6 +192,16 @@ a {
     .filter li.visibly-hidden {
       opacity: 0;
       pointer-events: none; }
+    @media (max-width: 768px) {
+      .filter li:first-child {
+        margin-left: 0; } }
+  @media (max-width: 768px) {
+    .filter {
+      text-align: center;
+      float: left;
+      margin: 40px 0 0 0;
+      padding: 0;
+      width: 100%; } }
 
 .posts, article.main {
   width: 100%;

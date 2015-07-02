@@ -21,6 +21,20 @@
             opacity: 0;
             pointer-events: none;
         }
+
+        @media (max-width: 768px){
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media (max-width: 768px){
+        text-align: center;
+        float: left;
+        margin: 40px 0 0 0;
+        padding: 0;
+        width: 100%;
     }
 }
 
