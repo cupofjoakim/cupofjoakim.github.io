@@ -1,0 +1,14 @@
+<a class="post case" style="background-image: url('{{ post.gif }}');" href="{{ post.url }}">
+  <div class="overlay"></div>
+
+  <div class="post-wrap">
+
+    <span class="post-date">{{ post.date | date: "%-d %B %Y" }} – </span><span class="post-cat">{{ post.type }}</span>
+    <h1 class="post-title">
+        {{ post.title }}
+    </h1>
+
+    <p>{{ post.excerpt }}</p>
+
+  </div>
+</a>

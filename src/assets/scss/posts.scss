@@ -1,0 +1,206 @@
+.filter {
+    list-style: none;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 40px;
+    margin-top: 40px;
+
+    li {
+        display: inline-block;
+        margin-left: 20px;
+        color: $darkBlue;
+
+        &:hover {
+            color: $orange;
+            cursor: pointer;
+        }
+
+        &.visibly-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+.posts, article.main {
+    width: 100%;
+    margin-top: 100px;
+
+    @media (max-width: 1120px) {
+        margin-top: 90px;
+    }
+
+    .post {
+        width: 100%;
+        margin-bottom: 65px;
+        margin-top: 65px;
+        font-size: 16px;
+        overflow: hidden;
+
+        transition: all .3s ease;
+        backface-visibility: hidden;
+
+        &.hidden {
+            height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        @media (max-width: 1120px) {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        .post-wrap {
+            width: 520px;
+            margin: 0 auto;
+
+            @media (max-width: 1120px) {
+                width: 50%;
+                min-width: 280px;
+            }
+        }
+
+        .post-date {
+            font-family: 'Droid Sans', sans-serif;
+            color: $darkBlue;
+        }
+
+        .post-cat {
+            font-family: 'Droid Sans', sans-serif;
+            color: $orange;
+            text-transform: capitalize;
+        }
+
+        h1.post-title {
+            margin-top: 5px;
+            margin-bottom: 8px;
+            font-size: 28px;
+
+            &:hover a {
+                color: $orange;
+            }
+        }
+
+        p {
+            line-height: 24px;
+            margin: 0 0 30px 0;
+
+            em {
+                opacity: .9;
+                margin-top: 10px;
+                display: inline-block;
+            }
+
+        }
+
+        .arrow {
+            display: block;
+            line-height: 12px;
+            font-size: 24px;
+            color: $darkBlue;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        &.case {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            background-size: cover;
+            background-position: center center;
+            display: block;
+            padding-top: 52px;
+            padding-bottom: 52px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+
+            .post-date, .post-title {
+                color: #fff;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .overlay {
+                position:absolute;
+                top: 0;
+                height: 500px;
+                width: 100%;
+                background-color: rgba(74,144,226,0.6);
+
+                transition: .3s ease background-color;
+            }
+
+            .post-wrap {
+                position:relative;
+                z-index: 30;
+            }
+
+            &:hover .overlay {
+                background-color: rgba(74,144,226,0.9);
+            }
+
+        }
+        
+    }
+}
+
+article.main {
+    img, pre>code {
+        // Used between 1120-1340 and below 500 in width
+        width: 100%;
+        display: block;
+
+        @media (min-width: 1600px) {
+            width: 700px;
+            margin-left: -90px;
+        }
+
+        @media (min-width: 1340px) and (max-width: 1600px) {
+            width: 600px;
+            margin-left: -40px;
+        }
+
+        @media (min-width: 500px) and (max-width: 1120px) {
+            width: 150%;
+            margin-left: -25%;
+        }
+
+    }
+
+    pre {
+        overflow: visible;
+    }
+
+    pre>code {
+        max-width: 100%;
+        overflow: scroll;
+
+        @media (min-width: 1600px) {
+            max-width: 700px;
+        }
+
+        @media (min-width: 1340px) and (max-width: 1600px) {
+            max-width: 600px;
+        }
+
+        @media (min-width: 500px) and (max-width: 1120px) {
+            max-width: 150%;
+        }
+    }
+
+    .post .post-wrap {
+        h1.post-title {
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+    }
+
+}

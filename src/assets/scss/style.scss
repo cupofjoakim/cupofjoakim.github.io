@@ -1,0 +1,29 @@
+/* 
+The main SCSS file for everything, yep
+*/
+
+$darkBlue: #4F5A63;
+$mediumGray: #787E83;
+$lightGray: #FAFAFA;
+$orange: #F5A623;
+
+@import "layout";
+@import "typography";
+
+@import "modules/pagination.scss";
+@import "modules/top-bar.scss";
+
+@import "profile";
+@import "posts";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hidden {
+    display: none;
+}
+

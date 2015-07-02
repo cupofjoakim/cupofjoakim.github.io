@@ -1,4 +1,7 @@
-cupofjoakim.github.io
-=====================
+# Joakim Wimmerstedt - Portfolio
 
-portfolio
+Personal website. Will serve as a blog/portfolio.
+
+Dependencies:
+* node + npm
+* browserify

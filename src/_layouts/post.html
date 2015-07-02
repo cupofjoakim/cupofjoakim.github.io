@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="bar">
+  <a class="back" href="/">&#8676; Back</a>
+</div>
+
+<article class="main">
+<!-- {% if page.type == "case" %}
+  <article class="case">
+{% else %}
+  <article class="article">
+{% endif %} -->
+
+  <div class="post">
+    <div class="post-wrap">
+      <span class="post-date">{{ page.date | date: "%-d %B %Y" }} – </span><span class="post-cat">{{ page.type }}</span>
+      <h1 class="post-title">
+        <a href="{{ post.url }}">
+          {{ page.title }}
+        </a>
+      </h1>
+
+      {{ content }}
+    </div>
+  </div>
+
+</article>
