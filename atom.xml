@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Joakim Wimmerstedt - Portfolio</title>
+ <link href="cupofjoakim.github.io/atom.xml" rel="self"/>
+ <link href="cupofjoakim.github.io/"/>
+ <updated>2015-07-02T15:37:15+02:00</updated>
+ <id>cupofjoakim.github.io</id>
+ <author>
+   <name>Joakim Wimmerstedt</name>
+   <email>joakim.wimmerstedt@hyperisland.se</email>
+ </author>
+
+ 
+ <entry>
+   <title>Mabi.se</title>
+   <link href="cupofjoakim.github.io/cases/2015/07/02/mabi/"/>
+   <updated>2015-07-02T00:00:00+02:00</updated>
+   <id>cupofjoakim.github.io/cases/2015/07/02/mabi</id>
+   <content type="html">&lt;p&gt;My first live project using Angular.js was the website for &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi&lt;/a&gt;, one of the top rental car companies in Sweden. It was the biggest assignments I had over at &lt;a href=&quot;http://www.river.se&quot;&gt;River&lt;/a&gt; apart from a iAd campaign I did for Nike. I was the sole front end developer on this project, but some advanced features like figuring out the rules for the car filtration was definitely a team effort.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/mabi-landing.png&quot; alt=&quot;Image of the landing page.&quot;&gt;
+&lt;em&gt;Mabi had a lot of good imagery the designers could blow up for the banners.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/mabi-cars.png&quot; alt=&quot;Image of the cars section inside the booking flow.&quot;&gt;
+&lt;em&gt;The car filtration is where I definitely learned the most about directives as components, how ng-reapeats work as well as the limitations of angular.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/mabi-offices.png&quot; alt=&quot;Image of the offices page.&quot;&gt;
+&lt;em&gt;A customized google map that shows the closest rental spots was also a fun and quick exersice.&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;The site&amp;rsquo;s changed a lot since I left River in early 2014, but if you still want to check it out, just go to &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi.se.&lt;/a&gt;. A heads up though – it doesn&amp;rsquo;t seem like there&amp;rsquo;s support for higher resolutions than 1080p any more, so the background image is ugly if you&amp;rsquo;re on a big screen.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GetSwish.se</title>
+   <link href="cupofjoakim.github.io/cases/2015/07/02/getswish/"/>
+   <updated>2015-07-02T00:00:00+02:00</updated>
+   <id>cupofjoakim.github.io/cases/2015/07/02/getswish</id>
+   <content type="html">&lt;p&gt;The first project I got to do when I started at &lt;a href=&quot;http://www.theworldloves.com&quot;&gt;The World Loves&lt;/a&gt; in April 2014 was the website for Swish. Swish is the largest mobile payment provider in Sweden, with over 2 800 000 users (as of july 2015). That&amp;rsquo;s kind of a lot for a country that has under 10 million inhabitants.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.getswish.se&quot;&gt;GetSwish.se&lt;/a&gt; remains the largest website I&amp;rsquo;ve developed with over 180k visits each month.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/swish-carousel.gif&quot; alt=&quot;Moving image showing the landing carousel&quot;&gt;
+&lt;em&gt;The carousel was made with facebooks paper campaign site as inspiration. It&amp;rsquo;s not totally enjoyable in gif-form, &lt;a href=&quot;https://www.getswish.se&quot;&gt;check it out live&lt;/a&gt;!.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/swish-counter.png&quot; alt=&quot;Image displaying the counter&quot;&gt;
+&lt;em&gt;The front page grid was made to feel alive, so each month we posted new statistics about Swish.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/swish-parallax.gif&quot; alt=&quot;Moving image showing parallax effect&quot;&gt;
+&lt;em&gt;We tried giving the image headers parallax effect so that the website wouldn&amp;rsquo;t feel to static on the subpages.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Tools&lt;/h2&gt;
+
+&lt;p&gt;The website is running on wordpress. I was heavily invested in finding a CMS that did exactly what we needed it to, but in the end Wordpress was the best fit due to our experience with developing for it. The simplicity for administrators was also a big thing. &lt;/p&gt;
+
+&lt;p&gt;For easy development we were using git for versioning and grunt with sass(scss compass), htmlmin and require.js(with r.js) for packaging. Grunt would also detect changes to the images to see if they needed compression or in the case of svg&amp;rsquo;s, minification.&lt;/p&gt;
+
+&lt;p&gt;When it comes to css grid, we actually used one I made myself just for that project. It&amp;rsquo;s a basic setup with adjustable columns and gutter width, written in scss. &lt;/p&gt;
+
+&lt;h2&gt;Optimization&lt;/h2&gt;
+
+&lt;p&gt;Due to the very content heavy first page we base64 encoded most of the imagery to load in more high res images as they were needed. This strategy allowed for a much quicker pageload, and created a natural evaluation point to check if we should feed the client a regular resolution image or a retina version of it. &lt;/p&gt;
+
+&lt;p&gt;Scrolling performance was also a high priority during development, so all scroll listeners were throttled to 60fps and we made sure never to change values for javascript animated items when they were not in the viewport. Minimizing dom manipulations were a priority from day one.&lt;/p&gt;
+
+&lt;p&gt;The site also featured the standard &amp;ldquo;run-of-the-mill&amp;rdquo; optimizations such as compression and minification of assets, gzip compression, varnish, etc.&lt;/p&gt;
+
+&lt;h2&gt;Deploys&lt;/h2&gt;
+
+&lt;p&gt;We used git for all deploys. We had a grunt task set up for version tagging and automatically merging all the tagged commits to the release branch. We&amp;rsquo;d then ssh into the hosting server and simply run a git pull from the repository directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.getswish.se&quot;&gt;Check out the website&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Building Alchemist App</title>
+   <link href="cupofjoakim.github.io/articles/2015/07/02/building-alchemist-app/"/>
+   <updated>2015-07-02T00:00:00+02:00</updated>
+   <id>cupofjoakim.github.io/articles/2015/07/02/building-alchemist-app</id>
+   <content type="html">&lt;p&gt;In November 2014 we were experiencing a low activity period for the tech team over at The World Loves. Together with my colleague (and former classmate) &lt;a href=&quot;http://karlerikjonatan.github.io/&quot;&gt;Jonatan Pettersson&lt;/a&gt; I set out to learn something new. We decided to make an iOS app in Swift, mostly since neither of us had done one before and Swift was growing as a language.&lt;/p&gt;
+
+&lt;h2&gt;Introducing Alchemist&lt;/h2&gt;
+
+&lt;p&gt;Our idea was simple – we should start out as we started out with javascript. Making a product that simply wrapped open API&amp;rsquo;s and presented it&amp;rsquo;s information in a collected way. An aggregator, of sorts.&lt;/p&gt;
+
+&lt;p&gt;I had recently started using an awesome service called &lt;a href=&quot;https://tastekid.com&quot;&gt;TasteKid&lt;/a&gt; that recommends media to a users liking. You post a title and get recommendations back. They just happened to have an open API so we decided to simply work around that.&lt;/p&gt;
+
+&lt;h2&gt;Constrained by constraints&lt;/h2&gt;
+
+&lt;p&gt;Confession time: I&amp;rsquo;ve never developed a GUI that didn&amp;rsquo;t rely on CSS and HTML before making this app, and I&amp;rsquo;ve still never tried flexbox in CSS. Constraints was a totally new concept for me.&lt;/p&gt;
+
+&lt;p&gt;I think I did get a hang for it pretty quickly though, mostly thanks to &lt;a href=&quot;http://www.appcoda.com/introduction-auto-layout/&quot;&gt;this article over at appcoda.com&lt;/a&gt; and the video tutorials over at [Team Treehouse]. I&amp;rsquo;m still not convinced it&amp;rsquo;s the best way of specifying UI layouts, but then again – CSS is even more shit than this. I did miss the styling parts from CSS though. &lt;/p&gt;
+
+&lt;h2&gt;JSON is a bitch&lt;/h2&gt;
+
+&lt;p&gt;Well, turns out we web developers are spoiled brats.&lt;/p&gt;
+
+&lt;p&gt;Navigating JSON is such a breeze in javascript that I&amp;rsquo;ve never given it any thought on how weird it can be in other languages. We spent the better part of a day together just trying to figure it out, and we ended up using the &lt;a href=&quot;https://github.com/SwiftyJSON/SwiftyJSON&quot;&gt;SwiftJSON library&lt;/a&gt; because it made it so much easier. Our app was so reliant on JSON sources (themoviedb, goodreads, youtube, tastekid, etc.) that this was a major life saver. &lt;/p&gt;
+
+&lt;h2&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;We learned a lot and gained some valuable understanding on how different things are over in app-land. While iOS dev&amp;rsquo;s have stuff like CocoaPods, the tooling isn&amp;rsquo;t like the web development scene at all. It might be because everything is so controlled by Apple and that xCode in itself functions like a framework. While &lt;a href=&quot;https://facebook.github.io/react-native/&quot;&gt;React Native&lt;/a&gt; might change the environment somewhat it&amp;rsquo;s still going to be a bit lack-luster. I like to be able to choose what way I want to develop a product, but in iOS there&amp;rsquo;s mostly just one way.&lt;/p&gt;
+
+&lt;p&gt;That being said, Swift isn&amp;rsquo;t really harder than regular web front end technologies if you&amp;rsquo;re doing it at a basic level. Apple are literally giving you almost all the tools you need. I&amp;rsquo;ll try to make another app once I&amp;rsquo;ve got enough free time to try out React Native.&lt;/p&gt;
+
+&lt;p&gt;The app is available for download over at the &lt;a href=&quot;https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=942473452&amp;amp;mt=8&quot;&gt;app store&lt;/a&gt; if you want to try it out.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Wonder World Fur</title>
+   <link href="cupofjoakim.github.io/cases/2015/07/01/wonder-world-fur/"/>
+   <updated>2015-07-01T00:00:00+02:00</updated>
+   <id>cupofjoakim.github.io/cases/2015/07/01/wonder-world-fur</id>
+   <content type="html">&lt;p&gt;During my internship at Stink Digital back in late 2012 I was part of the two man developer team who built the Wonder World Fur campaign site for the &lt;a href=&quot;http://wwf.org/&quot;&gt;World Wildlife Foundation&lt;/a&gt;(WWF). Wonder World Fur was a brand where WWF sold furs from 100% imaginary animals.&lt;/p&gt;
+
+&lt;p&gt;Our team consisted of &lt;a href=&quot;http://ianmadethis.com/&quot;&gt;Ian Hart&lt;/a&gt; and me from the London office and &lt;a href=&quot;http://www.charlie-montagut.com/&quot;&gt;Charlie Montagut&lt;/a&gt; from the then newly opened Paris office. I was in charge of most of the front-end. The Project was awarded with a &lt;a href=&quot;http://www.thefwa.com/site/wonder-world-fur&quot;&gt;FWA SOTD award in April 2013&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/wwf-video.jpg&quot; alt=&quot;Wonder World Fur utilized autoplaying fullscreen videos.&quot;&gt;
+&lt;em&gt;The site in itself used autoplaying fullscreen videos. These ranged from subtle cinemagraphs to the campaign trailer.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/wwf-grid.jpg&quot; alt=&quot;Wonder World Fur used a grid to let imagery speak instead of text.&quot;&gt;
+&lt;em&gt;The site also featured some very balanced animations for entry and hover effects to highlight the imagery and the products. These can&amp;rsquo;t be showcased propperly since no screen recordings from when the site was up has been saved.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;cupofjoakim.github.io/assets/post-images/wwf-info.jpg&quot; alt=&quot;Each of the imaginary animals had information panels where you could learn more about them&quot;&gt;
+&lt;em&gt;Each of the imaginary animals had information panels where you could learn more about them. You could watch a 3D-rendered video to see what they would look like in action, listen to the different sounds the animal could make or just read a description.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The site has sadly gone off the web since it was online, but you could still see it it&amp;rsquo;s FWA award: &lt;a href=&quot;http://www.thefwa.com/site/wonder-world-fur&quot;&gt;http://www.thefwa.com/site/wonder-world-fur&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
