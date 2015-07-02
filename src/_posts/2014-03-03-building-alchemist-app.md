@@ -7,29 +7,28 @@ type: article
 excerpt: "In November 2014 me and a collegue set out to build our first iOS app – and learn Swift as we went along. This article serves as a summary of what two js-loving front-enders learnt while moving into native territory."
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+In November 2014 we were experienceing a low activity period for the tech team over at The World Loves. Together with my colleuge (and former classmate) [Jonatan Pettersson][jonjon] I set out to learn something new. We decided to make an iOS app in Swift, mostly since neither of us had done one before and Swift was growing as a language.
 
-We've also added a lot of different settings for [Redcarpet][redcarpet],
-including being able to ^superscript, _underline_, ==highlight==,
-~~strikethrough~~, and footnotes.[^1] It even automatically makes links into
-URLs: www.jekyllrb.com and you can put multiple underscores in words without
-them leaning all over the place: this_word_has_underscores. It'll also make your
-quotes look nice, like this: "hoho", your dashes and hypens will be dashing too:
----/--.
+##Introducing Alchemist
+Our idea was simple – we should start out as we started out with Javascript. Making a product that simply wrapped open API's and presented it's information in a collected way. An aggregator, of sorts.
 
-Jekyll also offers powerful support for code snippets:
+I had recently started using an awesome service called [TasteKid][tastekid] that recommends media to a users liking. You post a title and get recommendations back. They just happened to have an open API so we decided to simply work around that.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+##Development
+Controlled by apple
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of
-Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+###Constrained by constraints
+wtf
 
-[redcarpet]: https://github.com/vmg/redcarpet
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+###JSON is a bitch
+Well, json is definitely more fun in Javascript. 
+
+##Summary
+The app is available for download over at the [app store][app] if you want to try it out.
+
+We're yet to open source the code, but we only need to exclude our api keys for that to be done. If there's any interest in looking at our code you simply just need to tell us.
+
+
+[jonjon]: http://karlerikjonatan.github.io/
+[tastekid]: https://tastekid.com
+[app]: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=942473452&mt=8
