@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>cupofjoakim.github.io/</loc>
-    <lastmod>2015-07-02T15:37:15+02:00</lastmod>
+    <loc>http://cupofjoakim.github.io/</loc>
+    <lastmod>2015-07-02T16:27:43+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>cupofjoakim.github.io/cases/2015/07/02/mabi/</loc>
+      <loc>http://cupofjoakim.github.io/cases/2015/07/02/mabi/</loc>
       
         <lastmod>2015-07-02T00:00:00+02:00</lastmod>
       
@@ -21,7 +21,7 @@
     </url>
   
     <url>
-      <loc>cupofjoakim.github.io/cases/2015/07/02/getswish/</loc>
+      <loc>http://cupofjoakim.github.io/cases/2015/07/02/getswish/</loc>
       
         <lastmod>2015-07-02T00:00:00+02:00</lastmod>
       
@@ -34,7 +34,7 @@
     </url>
   
     <url>
-      <loc>cupofjoakim.github.io/articles/2015/07/02/building-alchemist-app/</loc>
+      <loc>http://cupofjoakim.github.io/articles/2015/07/02/building-alchemist-app/</loc>
       
         <lastmod>2015-07-02T00:00:00+02:00</lastmod>
       
@@ -47,7 +47,7 @@
     </url>
   
     <url>
-      <loc>cupofjoakim.github.io/cases/2015/07/01/wonder-world-fur/</loc>
+      <loc>http://cupofjoakim.github.io/cases/2015/07/01/wonder-world-fur/</loc>
       
         <lastmod>2015-07-01T00:00:00+02:00</lastmod>
       
@@ -61,22 +61,9 @@
   
   
   <url>
-    <loc>cupofjoakim.github.io/404/</loc>
+    <loc>http://cupofjoakim.github.io/404/</loc>
     
-      <lastmod>2015-07-02T15:37:15+02:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>cupofjoakim.github.io/atom.xml</loc>
-    
-      <lastmod>2015-07-02T15:37:15+02:00</lastmod>
+      <lastmod>2015-07-02T16:27:43+02:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -87,9 +74,9 @@
   </url>
   
   <url>
-    <loc>cupofjoakim.github.io/</loc>
+    <loc>http://cupofjoakim.github.io/atom.xml</loc>
     
-      <lastmod>2015-07-02T15:37:15+02:00</lastmod>
+      <lastmod>2015-07-02T16:27:43+02:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -100,9 +87,22 @@
   </url>
   
   <url>
-    <loc>cupofjoakim.github.io/sitemap.xml</loc>
+    <loc>http://cupofjoakim.github.io/</loc>
     
-      <lastmod>2015-07-02T15:37:15+02:00</lastmod>
+      <lastmod>2015-07-02T16:27:43+02:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://cupofjoakim.github.io/sitemap.xml</loc>
+    
+      <lastmod>2015-07-02T16:27:43+02:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
