@@ -61,12 +61,16 @@
             }
 
             &:hover {
-                color: #F5A623;
+                color: #FFF;
             }
         }
 
 
-
+        .contact {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
 
 
         .external-links {
