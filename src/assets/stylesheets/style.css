@@ -130,7 +130,11 @@ a {
       .profile .about a:visited {
         color: #333; }
       .profile .about a:hover {
-        color: #F5A623; }
+        color: #FFF; }
+    .profile .about .contact {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
     .profile .about .external-links {
       list-style: none;
       padding: 0; }
@@ -261,6 +265,12 @@ a {
         opacity: .9;
         margin-top: 10px;
         display: inline-block; }
+      .posts .post p a, article.main .post p a {
+        color: #4A90E2; }
+        .posts .post p a:visited, article.main .post p a:visited {
+          color: #4A90E2; }
+        .posts .post p a:hover, article.main .post p a:hover {
+          color: #F5A623; }
     .posts .post .arrow, article.main .post .arrow {
       display: block;
       line-height: 12px;

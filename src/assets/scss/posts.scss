@@ -108,6 +108,18 @@
                 display: inline-block;
             }
 
+            a {
+                color: $lightBlue;
+
+                &:visited {
+                    color: $lightBlue;
+                }
+                
+                &:hover {
+                    color: $orange;
+                }
+            }
+
         }
 
         .arrow {
