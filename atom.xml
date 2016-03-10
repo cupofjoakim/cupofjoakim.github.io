@@ -4,13 +4,71 @@
  <title>Joakim Wimmerstedt - Portfolio</title>
  <link href="http://cupofjoakim.github.io/atom.xml" rel="self"/>
  <link href="http://cupofjoakim.github.io/"/>
- <updated>2015-07-06T16:05:59+02:00</updated>
+ <updated>2016-03-10T14:37:49+01:00</updated>
  <id>http://cupofjoakim.github.io</id>
  <author>
    <name>Joakim Wimmerstedt</name>
    <email>joakim.wimmerstedt@hyperisland.se</email>
  </author>
 
+ 
+ <entry>
+   <title>shhbostad.se</title>
+   <link href="http://cupofjoakim.github.io/cases/2016/02/20/shhbostad/"/>
+   <updated>2016-02-20T00:00:00+01:00</updated>
+   <id>http://cupofjoakim.github.io/cases/2016/02/20/shhbostad</id>
+   <content type="html">&lt;p&gt;This autumn I spent some time with the newly founded agency &lt;a href=&quot;http://sebton.se/&quot;&gt;Sebton/Co&lt;/a&gt;. They&amp;rsquo;re great little family run company &amp;hellip;&lt;/p&gt;
+
+&lt;h2&gt;The task&lt;/h2&gt;
+
+&lt;p&gt;The main project I was brought in to develop was a new website for Svenska Hyreshus, a swedish property group. The website that was planned needed to solve a number of issues, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Being easy for their managers to update themselves&lt;/li&gt;
+&lt;li&gt;Being flexible in terms of layout&lt;/li&gt;
+&lt;li&gt;Incorporating their new system for building projects &lt;em&gt;(This was a big one!)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Being able to run on a hosting solution that only supports PHP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Choosing a platform&lt;/h2&gt;
+
+&lt;p&gt;After a lot of research about the limitations around this new system of theirs, it was decided that the site would run on wordpress to keep development time down. Wordpress in itself encourages this &amp;ldquo;Plug &amp;amp; Play&amp;rdquo; mentality with a lot of random plugins. I&amp;rsquo;ve seen a couple of sites being very hard to debug due to plugins being incompatible and I&amp;rsquo;m not willing to go down that route. &lt;/p&gt;
+
+&lt;p&gt;This led the highest priority of the initial development to be stability. I set out to list exactly what kind of plugins would be needed, and then to test them out to see if everything worked as planned.&lt;/p&gt;
+
+&lt;p&gt;In the end I decided to go with &lt;a href=&quot;http://www.advancedcustomfields.com/pro/&quot;&gt;Advanced Custom Fields Pro&lt;/a&gt; for their flexible layouts and repeater fields, &lt;a href=&quot;https://yoast.com/wordpress/plugins/seo/&quot;&gt;Yoast SEO&lt;/a&gt; for easy SEO management and &lt;a href=&quot;https://wordpress.org/plugins/wp-mail-smtp/&quot;&gt;WP Mail SMTP&lt;/a&gt; to allow wordpress to send mail via smtp. Othe plugins were discarded as they wheren&amp;rsquo;t needed. &lt;/p&gt;
+
+&lt;h2&gt;Bringing Wordpress to 2015&lt;/h2&gt;
+
+&lt;p&gt;Wordpress, as I said, feels kind of outdated to me. It&amp;rsquo;s been around since forever and I don&amp;rsquo;t feel that the majority of the wordpress community embraces modern development tools. I wanted to make sure to do wordpress justice by trying out a better workflow.&lt;/p&gt;
+
+&lt;p&gt;This led me to try out &lt;a href=&quot;https://github.com/wesleytodd/YeoPress&quot;&gt;Yeopress&lt;/a&gt;, an unofficial yeoman generator for wordpress. It even has support for vagrant, which is awesome. I did however make some changes after trying it out, such as adding support for a staging environment.&lt;/p&gt;
+
+&lt;h2&gt;Building the theme&lt;/h2&gt;
+
+&lt;p&gt;For the theme, I went with the yeopress template theme as a base and built upon that. Grunt was used as the taskrunner, bower as the package manager and we used scss for styling.&lt;/p&gt;
+
+&lt;p&gt;The theme needed to be very flexible in terms of layout, so we built it to rely heavily on &lt;a href=&quot;http://www.advancedcustomfields.com/pro/&quot;&gt;Advanced Custom Fields&lt;/a&gt;. Their repeater- and flexible content-fields are a godsend - I really don&amp;rsquo;t think theres any other option. With a developer key it&amp;rsquo;s also very cheap.&lt;/p&gt;
+
+&lt;p&gt;When I recieved the first drafts on the design I started to break everything up in rows, like small lego pieces. From the wordpress admin one could easily go in, add a block (let&amp;rsquo;s say a Hero Module for example) and simply position it amongst the other blocks in whatever order they themselves fancied.&lt;/p&gt;
+
+&lt;p&gt;I fucking love &lt;a href=&quot;http://www.advancedcustomfields.com/pro/&quot;&gt;Advanced Custom Fields&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Adding support for Vitec&lt;/h2&gt;
+
+&lt;p&gt;One of the clients big demands was to have support for their new system for building projects, Vitec.&lt;/p&gt;
+
+&lt;p&gt;Vitec is a great platform for what Svenska Hyreshus are doing. It&amp;rsquo;s something for both brokers, project managers and so on, but when you update a project the changes also push to the biggest housing sites in sweden, such as Hemnet or Blocket Bostad. &lt;/p&gt;
+
+&lt;p&gt;To bring this funcitonality to the new project I developed a custom plugin that fetched the information from Vitec&amp;rsquo;s SOAP API, stored them in our database and programmatically added pages for the current projects. Since we couldn&amp;rsquo;t use the &amp;lsquo;push&amp;rsquo; features that hemnet or blocket had to update the information instantly as it was updated in the system, I set up a CRON-job to fetch new information from Vitec every 10 minutes.&lt;/p&gt;
+
+&lt;h2&gt;Final words&lt;/h2&gt;
+
+&lt;p&gt;In the end I&amp;rsquo;m very happy with how the site turned out. What we&amp;rsquo;ve got now is a very easily maintained little website that works well. From what I&amp;rsquo;ve heard from the clients they&amp;rsquo;re happy as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://shhbostad.se&quot;&gt;Check out the website at shhbostad.se&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>I'm going freelance!</title>
