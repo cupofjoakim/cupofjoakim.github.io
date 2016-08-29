@@ -4,7 +4,7 @@
  <title>Joakim Wimmerstedt - Portfolio</title>
  <link href="http://cupofjoakim.github.io/atom.xml" rel="self"/>
  <link href="http://cupofjoakim.github.io/"/>
- <updated>2016-03-10T14:39:11+01:00</updated>
+ <updated>2016-08-29T09:30:32+02:00</updated>
  <id>http://cupofjoakim.github.io</id>
  <author>
    <name>Joakim Wimmerstedt</name>
@@ -118,26 +118,26 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.getswish.se&quot;&gt;GetSwish.se&lt;/a&gt; remains the largest website I&amp;rsquo;ve developed with over 180k visits each month.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/swish-carousel.gif&quot; alt=&quot;Moving image showing the landing carousel&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-carousel.gif&quot; alt=&quot;Moving image showing the landing carousel&quot;&gt;
 &lt;em&gt;The carousel was made with facebooks paper campaign site as inspiration. It&amp;rsquo;s not totally enjoyable in gif-form, &lt;a href=&quot;https://www.getswish.se&quot;&gt;check it out live&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/swish-counter.png&quot; alt=&quot;Image displaying the counter&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-counter.png&quot; alt=&quot;Image displaying the counter&quot;&gt;
 &lt;em&gt;The front page grid was made to feel alive, so each month we posted new statistics about Swish.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/swish-parallax.gif&quot; alt=&quot;Moving image showing parallax effect&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-parallax.gif&quot; alt=&quot;Moving image showing parallax effect&quot;&gt;
 &lt;em&gt;We tried giving the image headers parallax effect so that the website wouldn&amp;rsquo;t feel to static on the subpages.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2&gt;Tools&lt;/h2&gt;
 
-&lt;p&gt;The website is running on wordpress. I was heavily invested in finding a CMS that did exactly what we needed it to, but in the end Wordpress was the best fit due to our experience with developing for it. The simplicity for administrators was also a big thing. &lt;/p&gt;
+&lt;p&gt;The website is running on wordpress. I was heavily invested in finding a CMS that did exactly what we needed it to, but in the end Wordpress was the best fit due to our experience with developing for it. The simplicity for administrators was also a big thing.&lt;/p&gt;
 
 &lt;p&gt;For easy development we were using git for versioning and grunt with sass(scss compass), htmlmin and require.js(with r.js) for packaging. Grunt would also detect changes to the images to see if they needed compression or in the case of svg&amp;rsquo;s, minification.&lt;/p&gt;
 
-&lt;p&gt;When it comes to css grid, we actually used one I made myself just for that project. It&amp;rsquo;s a basic setup with adjustable columns and gutter width, written in scss. &lt;/p&gt;
+&lt;p&gt;When it comes to css grid, we actually used one I made myself just for that project. It&amp;rsquo;s a basic setup with adjustable columns and gutter width, written in scss.&lt;/p&gt;
 
 &lt;h2&gt;Optimization&lt;/h2&gt;
 
-&lt;p&gt;Due to the very content heavy first page we base64 encoded most of the imagery to load in more high res images as they were needed. This strategy allowed for a much quicker pageload, and created a natural evaluation point to check if we should feed the client a regular resolution image or a retina version of it. &lt;/p&gt;
+&lt;p&gt;Due to the very content heavy first page we base64 encoded most of the imagery to load in more high res images as they were needed. This strategy allowed for a much quicker pageload, and created a natural evaluation point to check if we should feed the client a regular resolution image or a retina version of it.&lt;/p&gt;
 
 &lt;p&gt;Scrolling performance was also a high priority during development, so all scroll listeners were throttled to 60fps and we made sure never to change values for javascript animated items when they were not in the viewport. Minimizing dom manipulations were a priority from day one.&lt;/p&gt;
 
@@ -195,13 +195,13 @@
 
 &lt;p&gt;Our team consisted of &lt;a href=&quot;http://ianmadethis.com/&quot;&gt;Ian Hart&lt;/a&gt; and me from the London office and &lt;a href=&quot;http://www.charlie-montagut.com/&quot;&gt;Charlie Montagut&lt;/a&gt; from the then newly opened Paris office. I was in charge of most of the front-end. The Project was awarded with a &lt;a href=&quot;http://www.thefwa.com/site/wonder-world-fur&quot;&gt;FWA SOTD award in April 2013&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/wwf-video.jpg&quot; alt=&quot;Wonder World Fur utilized autoplaying fullscreen videos.&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/wwf-video.jpg&quot; alt=&quot;Wonder World Fur utilized autoplaying fullscreen videos.&quot;&gt;
 &lt;em&gt;The site in itself used autoplaying fullscreen videos. These ranged from subtle cinemagraphs to the campaign trailer.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/wwf-grid.jpg&quot; alt=&quot;Wonder World Fur used a grid to let imagery speak instead of text.&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/wwf-grid.jpg&quot; alt=&quot;Wonder World Fur used a grid to let imagery speak instead of text.&quot;&gt;
 &lt;em&gt;The site also featured some very balanced animations for entry and hover effects to highlight the imagery and the products. These can&amp;rsquo;t be showcased propperly since no screen recordings from when the site was up has been saved.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/wwf-info.jpg&quot; alt=&quot;Each of the imaginary animals had information panels where you could learn more about them&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/wwf-info.jpg&quot; alt=&quot;Each of the imaginary animals had information panels where you could learn more about them&quot;&gt;
 &lt;em&gt;Each of the imaginary animals had information panels where you could learn more about them. You could watch a 3D-rendered video to see what they would look like in action, listen to the different sounds the animal could make or just read a description.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The site has sadly gone off the web since it was online, but you could still see it it&amp;rsquo;s FWA award: &lt;a href=&quot;http://www.thefwa.com/site/wonder-world-fur&quot;&gt;http://www.thefwa.com/site/wonder-world-fur&lt;/a&gt;&lt;/p&gt;
@@ -215,13 +215,13 @@
    <id>http://cupofjoakim.github.io/cases/2015/06/30/mabi</id>
    <content type="html">&lt;p&gt;My first live project using Angular.js was the website for &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi&lt;/a&gt;, one of the top rental car companies in Sweden. It was the biggest assignments I had over at &lt;a href=&quot;http://www.river.se&quot;&gt;River&lt;/a&gt; apart from a iAd campaign I did for Nike. I was the sole front end developer on this project, but some advanced features like figuring out the rules for the car filtration was definitely a team effort.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-landing.png&quot; alt=&quot;Image of the landing page.&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/mabi-landing.png&quot; alt=&quot;Image of the landing page.&quot;&gt;
 &lt;em&gt;Mabi had a lot of good imagery the designers could blow up for the banners.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-cars.png&quot; alt=&quot;Image of the cars section inside the booking flow.&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/mabi-cars.png&quot; alt=&quot;Image of the cars section inside the booking flow.&quot;&gt;
 &lt;em&gt;The car filtration is where I definitely learned the most about directives as components, how ng-reapeats work as well as the limitations of angular.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/post-images/mabi-offices.png&quot; alt=&quot;Image of the offices page.&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/mabi-offices.png&quot; alt=&quot;Image of the offices page.&quot;&gt;
 &lt;em&gt;A customized google map that shows the closest rental spots was also a fun and quick exersice.&lt;/em&gt; &lt;/p&gt;
 
 &lt;p&gt;The site&amp;rsquo;s changed a lot since I left River in early 2014, but if you still want to check it out, just go to &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi.se.&lt;/a&gt;. A heads up though – it doesn&amp;rsquo;t seem like there&amp;rsquo;s support for higher resolutions than 1080p any more, so the background image is ugly if you&amp;rsquo;re on a big screen.&lt;/p&gt;
