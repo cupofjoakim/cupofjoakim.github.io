@@ -2,12 +2,14 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Joakim Wimmerstedt - Portfolio
 description: The portfolio and website of swedish front-end developer Joakim Wimmerstedt
-tagline: 
-url: http://localhost:3000
+tagline:
+url: http://127.0.0.1:4000
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: serve
+
+gems: [jekyll-paginate, jekyll-gist]
 
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
@@ -30,7 +32,6 @@ lsi: false
 limit_posts: 10
 
 # Permalink structure and pagination options
-relative_permalinks: true
 permalink: pretty
 paginate: 300
 paginate_path: 'page:num'
