@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #4F5A63; }
 
 pre {
-  font-family: 'Droid Sans Mono'; }
+  font-family: "Droid Sans Mono"; }
 
 html {
   color: #787E83; }
@@ -110,7 +110,7 @@ a {
   .profile .about {
     width: 360px;
     position: absolute;
-    bottom: 100px;
+    bottom: 60px;
     left: 50%;
     margin-left: -180px;
     text-align: center;
@@ -167,7 +167,6 @@ a {
           margin: 0; }
         .profile .about .external-links li:hover img {
           -webkit-transform: scale(1.5);
-              -ms-transform: scale(1.5);
                   transform: scale(1.5); }
     @media (max-width: 1120px) {
       .profile .about {
@@ -185,21 +184,19 @@ a {
 
 @-webkit-keyframes float {
   from {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); }
-
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
   to {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px); } }
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
 
 @keyframes float {
   from {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); }
-
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
   to {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px); } }
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
 
 .filter {
   list-style: none;
@@ -338,8 +335,10 @@ article.main img, article.main pre > code {
     article.main img, article.main pre > code {
       width: 150%;
       margin-left: -25%; } }
+
 article.main pre {
   overflow: visible; }
+
 article.main pre > code {
   max-width: 100%;
   overflow: scroll; }
@@ -352,6 +351,7 @@ article.main pre > code {
   @media (min-width: 500px) and (max-width: 1120px) {
     article.main pre > code {
       max-width: 150%; } }
+
 article.main .post .post-wrap h1.post-title {
   font-size: 32px;
   margin-top: 10px;

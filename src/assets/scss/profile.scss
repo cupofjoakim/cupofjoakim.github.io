@@ -29,7 +29,7 @@
     .about {
         width: 360px;
         position: absolute;
-        bottom: 100px;
+        bottom: 60px;
         left: 50%;
         margin-left: -180px;
         text-align: center;
@@ -146,6 +146,6 @@
 }
 
 @keyframes float {
-    from { transform: translateY(0px); }
-    to { transform: translateY(20px); }
+    from { transform: translateY(-10px); }
+    to { transform: translateY(10px); }
 }
