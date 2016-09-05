@@ -4,7 +4,7 @@
  <title>Joakim Wimmerstedt - Portfolio</title>
  <link href="http://cupofjoakim.github.io/atom.xml" rel="self"/>
  <link href="http://cupofjoakim.github.io/"/>
- <updated>2016-08-29T09:30:32+02:00</updated>
+ <updated>2016-09-05T12:59:15+02:00</updated>
  <id>http://cupofjoakim.github.io</id>
  <author>
    <name>Joakim Wimmerstedt</name>
@@ -225,6 +225,24 @@
 &lt;em&gt;A customized google map that shows the closest rental spots was also a fun and quick exersice.&lt;/em&gt; &lt;/p&gt;
 
 &lt;p&gt;The site&amp;rsquo;s changed a lot since I left River in early 2014, but if you still want to check it out, just go to &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi.se.&lt;/a&gt;. A heads up though – it doesn&amp;rsquo;t seem like there&amp;rsquo;s support for higher resolutions than 1080p any more, so the background image is ugly if you&amp;rsquo;re on a big screen.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>About Joakim</title>
+   <link href="http://cupofjoakim.github.io/articles/1991/07/24/about-me/"/>
+   <updated>1991-07-24T00:00:00+02:00</updated>
+   <id>http://cupofjoakim.github.io/articles/1991/07/24/about-me</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/me.png&quot; alt=&quot;It&amp;#39;s Joakim, in space!&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Joakim Wimmerstedt is a self thaught web developer currently trying to solve parking problems at Parkando Technologies. In the past he&amp;rsquo;s worked in advertising, creating websites for companies big and small, such as WWF, Swish, SHHBostad, Nike and Samsung. A full CV is available over at &lt;a href=&quot;linkedin&quot;&gt;linkedin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;He also brews beer and goes to festivals.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Number of brewed batches: 12&lt;/li&gt;
+&lt;li&gt;Number of festivals attended: 31&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
