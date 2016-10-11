@@ -18,7 +18,7 @@ var bs;
 
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
-
+var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 
 gulp.task('jspack', function() {
@@ -26,6 +26,8 @@ gulp.task('jspack', function() {
         .bundle()
         //Pass desired output filename to vinyl-source-stream
         .pipe(source('bundle.js'))
+        .pipe(buffer()) // <----- convert from streaming to buffered vinyl file object
+        .pipe(uglify()) // dam bich u ugli
         // Start piping stream to tasks!
         .pipe(gulp.dest('./.tmp/javascript/'));
 });
@@ -38,8 +40,6 @@ gulp.task('jspack', function() {
 //     .pipe(uglify())
 //     .pipe(gulp.dest('./serve/assets/javascript'));
 // });
-
-
 
 
 // Deletes the directory that is used to serve the site during development
