@@ -13720,8 +13720,9 @@ Velocity, however, doesn't make this distinction. Thus, converting to or from th
 will produce an inaccurate conversion value. The same issue exists with the cx/cy attributes of SVG circles and ellipses. */
 },{}],3:[function(require,module,exports){
 var a = require('./post-filter');
+var b = require('./video-fallback');
 
-},{"./post-filter":5}],4:[function(require,module,exports){
+},{"./post-filter":5,"./video-fallback":6}],4:[function(require,module,exports){
 var shouldLog = false;
 
 module.exports = function(msg){
@@ -13811,4 +13812,32 @@ $('.filter').find('li').on('click', function(e){
 
 setup();
 log('Filter btns loaded');
-},{"./logger.js":4,"jquery":1,"velocity-animate":2}]},{},[3]);
+},{"./logger.js":4,"jquery":1,"velocity-animate":2}],6:[function(require,module,exports){
+var $ = window.jQuery = window.$ = require('jquery');
+
+var log = require('./logger.js'),
+    propertyArr = [],
+    videos = $('video'),
+    iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+var setup = function(){
+
+  if (iOS) {
+    videos.each(function(){
+      var newSrc = $(this).attr('src');
+      newSrc = newSrc.substr(0, newSrc.length-3) + 'gif';
+      $(this).replaceWith("<img class='video-fallback-img' src='"+ newSrc +"' />")
+    });
+
+    if (videos.length > 0) {
+      log('fallback executed on html5 videos');
+    }
+  }
+
+};
+
+
+setup();
+log('video-fallback loaded');
+
+},{"./logger.js":4,"jquery":1}]},{},[3]);

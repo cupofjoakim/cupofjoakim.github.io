@@ -4,13 +4,34 @@
  <title>Joakim Wimmerstedt - Portfolio</title>
  <link href="http://cupofjoakim.github.io/atom.xml" rel="self"/>
  <link href="http://cupofjoakim.github.io/"/>
- <updated>2016-09-05T12:59:15+02:00</updated>
+ <updated>2016-10-11T18:12:42+02:00</updated>
  <id>http://cupofjoakim.github.io</id>
  <author>
    <name>Joakim Wimmerstedt</name>
    <email>joakim.wimmerstedt@hyperisland.se</email>
  </author>
 
+ 
+ <entry>
+   <title>Laddkoll</title>
+   <link href="http://cupofjoakim.github.io/cases/2016/09/01/laddkoll/"/>
+   <updated>2016-09-01T00:00:00+02:00</updated>
+   <id>http://cupofjoakim.github.io/cases/2016/09/01/laddkoll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.laddkoll.se/&quot;&gt;Laddkoll&lt;/a&gt; is a swedish startup making it easier for electrical vehicle owners to charge their cars. They do this by providing both a localization service so the user easily can find a charge point, and by providing a simple way for the user to pay for both the parking and the actual charge.&lt;/p&gt;
+
+&lt;p&gt;When I &amp;ldquo;arrived at the scene&amp;rdquo;, there was two code bases to maintain. A native iOS version that worked really well and a less performant android version built on top on &lt;a href=&quot;https://facebook.github.io/react-native/&quot;&gt;React Native&lt;/a&gt;. The scope of the job was to refactor and improve the React Native version to such a degree that we could replace the iOS version with it. The motivation behind this was to lessen the amount of hours needed to maintain the both apps, and to streamline development since the Laddkoll team was small.&lt;/p&gt;
+
+&lt;p&gt;During the job we realized that React Native brought a whole lot more benefits than we usually thought. One of them was that it made it possible for services such as &lt;a href=&quot;https://microsoft.github.io/code-push/&quot;&gt;code-push&lt;/a&gt; to deliver updates to the app without going through App Store or Google Play Store. This is a major feature and makes it easy for a small team to get important bug fixes out, so we implemented it very quickly.&lt;/p&gt;
+
+&lt;p&gt;If you want to know more about the actual product, download it and try it out! It&amp;rsquo;s on &lt;a href=&quot;http://play.google.com/store/apps/details?id=se.laddkoll&quot;&gt;Google Play Store&lt;/a&gt; and the &lt;a href=&quot;http://www.appstore.com/laddkoll&quot;&gt;App Store&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This was my first forage into the world of React Native and I&amp;rsquo;ve got to say that I&amp;rsquo;m impressed. I&amp;rsquo;ve made a couple of apps before, but this is by far the most pleasant developer experience I&amp;rsquo;ve had. The only problems I&amp;rsquo;ve run into is third party libraries that weren&amp;rsquo;t working properly, and I can&amp;rsquo;t really blame that on the RN team. I&amp;rsquo;m already using React Native for a couple of other projects and I&amp;rsquo;m excited to see where it is going next.&lt;/p&gt;
+
+&lt;video src=&quot;http://cupofjoakim.github.io/assets/images/post-images/sp-enjoyment.mp4&quot; autoplay loop mute &gt;&lt;/video&gt;
+
+&lt;p&gt;&lt;em&gt;My whole experience with react native summarized in one animation.&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>shhbostad.se</title>
@@ -32,11 +53,11 @@
 
 &lt;h2&gt;Choosing a platform&lt;/h2&gt;
 
-&lt;p&gt;After a lot of research about the limitations around this new system of theirs, it was decided that the site would run on wordpress to keep development time down. Wordpress in itself encourages this &amp;ldquo;Plug &amp;amp; Play&amp;rdquo; mentality with a lot of random plugins. I&amp;rsquo;ve seen a couple of sites being very hard to debug due to plugins being incompatible and I&amp;rsquo;m not willing to go down that route. &lt;/p&gt;
+&lt;p&gt;After a lot of research about the limitations around this new system of theirs, it was decided that the site would run on wordpress to keep development time down. Wordpress in itself encourages this &amp;ldquo;Plug &amp;amp; Play&amp;rdquo; mentality with a lot of random plugins. I&amp;rsquo;ve seen a couple of sites being very hard to debug due to plugins being incompatible and I&amp;rsquo;m not willing to go down that route.&lt;/p&gt;
 
 &lt;p&gt;This led the highest priority of the initial development to be stability. I set out to list exactly what kind of plugins would be needed, and then to test them out to see if everything worked as planned.&lt;/p&gt;
 
-&lt;p&gt;In the end I decided to go with &lt;a href=&quot;http://www.advancedcustomfields.com/pro/&quot;&gt;Advanced Custom Fields Pro&lt;/a&gt; for their flexible layouts and repeater fields, &lt;a href=&quot;https://yoast.com/wordpress/plugins/seo/&quot;&gt;Yoast SEO&lt;/a&gt; for easy SEO management and &lt;a href=&quot;https://wordpress.org/plugins/wp-mail-smtp/&quot;&gt;WP Mail SMTP&lt;/a&gt; to allow wordpress to send mail via smtp. Othe plugins were discarded as they wheren&amp;rsquo;t needed. &lt;/p&gt;
+&lt;p&gt;In the end I decided to go with &lt;a href=&quot;http://www.advancedcustomfields.com/pro/&quot;&gt;Advanced Custom Fields Pro&lt;/a&gt; for their flexible layouts and repeater fields, &lt;a href=&quot;https://yoast.com/wordpress/plugins/seo/&quot;&gt;Yoast SEO&lt;/a&gt; for easy SEO management and &lt;a href=&quot;https://wordpress.org/plugins/wp-mail-smtp/&quot;&gt;WP Mail SMTP&lt;/a&gt; to allow wordpress to send mail via smtp. Othe plugins were discarded as they wheren&amp;rsquo;t needed.&lt;/p&gt;
 
 &lt;h2&gt;Bringing Wordpress to 2015&lt;/h2&gt;
 
@@ -58,7 +79,7 @@
 
 &lt;p&gt;One of the clients big demands was to have support for their new system for building projects, Vitec.&lt;/p&gt;
 
-&lt;p&gt;Vitec is a great platform for what Svenska Hyreshus are doing. It&amp;rsquo;s something for both brokers, project managers and so on, but when you update a project the changes also push to the biggest housing sites in sweden, such as Hemnet or Blocket Bostad. &lt;/p&gt;
+&lt;p&gt;Vitec is a great platform for what Svenska Hyreshus are doing. It&amp;rsquo;s something for both brokers, project managers and so on, but when you update a project the changes also push to the biggest housing sites in sweden, such as Hemnet or Blocket Bostad.&lt;/p&gt;
 
 &lt;p&gt;To bring this funcitonality to the new project I developed a custom plugin that fetched the information from Vitec&amp;rsquo;s SOAP API, stored them in our database and programmatically added pages for the current projects. Since we couldn&amp;rsquo;t use the &amp;lsquo;push&amp;rsquo; features that hemnet or blocket had to update the information instantly as it was updated in the system, I set up a CRON-job to fetch new information from Vitec every 10 minutes.&lt;/p&gt;
 
@@ -118,14 +139,16 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.getswish.se&quot;&gt;GetSwish.se&lt;/a&gt; remains the largest website I&amp;rsquo;ve developed with over 180k visits each month.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-carousel.gif&quot; alt=&quot;Moving image showing the landing carousel&quot;&gt;
-&lt;em&gt;The carousel was made with facebooks paper campaign site as inspiration. It&amp;rsquo;s not totally enjoyable in gif-form, &lt;a href=&quot;https://www.getswish.se&quot;&gt;check it out live&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
+&lt;video src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-carousel.mp4&quot; autoplay loop mute &gt;&lt;/video&gt;
+
+&lt;p&gt;&lt;em&gt;The carousel was made with facebooks paper campaign site as inspiration. It&amp;rsquo;s not totally enjoyable in gif-form, &lt;a href=&quot;https://www.getswish.se&quot;&gt;check it out live&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-counter.png&quot; alt=&quot;Image displaying the counter&quot;&gt;
 &lt;em&gt;The front page grid was made to feel alive, so each month we posted new statistics about Swish.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-parallax.gif&quot; alt=&quot;Moving image showing parallax effect&quot;&gt;
-&lt;em&gt;We tried giving the image headers parallax effect so that the website wouldn&amp;rsquo;t feel to static on the subpages.&lt;/em&gt;&lt;/p&gt;
+&lt;video src=&quot;http://cupofjoakim.github.io/assets/images/post-images/swish-parallax.mp4&quot; autoplay loop mute &gt;&lt;/video&gt;
+
+&lt;p&gt;&lt;em&gt;We tried giving the image headers parallax effect so that the website wouldn&amp;rsquo;t feel to static on the subpages.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2&gt;Tools&lt;/h2&gt;
 
@@ -222,7 +245,7 @@
 &lt;em&gt;The car filtration is where I definitely learned the most about directives as components, how ng-reapeats work as well as the limitations of angular.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://cupofjoakim.github.io/assets/images/post-images/mabi-offices.png&quot; alt=&quot;Image of the offices page.&quot;&gt;
-&lt;em&gt;A customized google map that shows the closest rental spots was also a fun and quick exersice.&lt;/em&gt; &lt;/p&gt;
+&lt;em&gt;A customized google map that shows the closest rental spots was also a fun and quick exersice.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The site&amp;rsquo;s changed a lot since I left River in early 2014, but if you still want to check it out, just go to &lt;a href=&quot;http://www.mabi.se&quot;&gt;Mabi.se.&lt;/a&gt;. A heads up though – it doesn&amp;rsquo;t seem like there&amp;rsquo;s support for higher resolutions than 1080p any more, so the background image is ugly if you&amp;rsquo;re on a big screen.&lt;/p&gt;
 </content>

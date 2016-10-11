@@ -2,10 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://cupofjoakim.github.io/</loc>
-    <lastmod>2016-09-05T12:59:15+02:00</lastmod>
+    <lastmod>2016-10-11T18:12:42+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+    <url>
+      <loc>http://cupofjoakim.github.io/cases/2016/09/01/laddkoll/</loc>
+      
+        <lastmod>2016-09-01T00:00:00+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
   
     <url>
       <loc>http://cupofjoakim.github.io/cases/2016/02/20/shhbostad/</loc>
@@ -102,7 +115,7 @@
   <url>
     <loc>http://cupofjoakim.github.io/404/</loc>
     
-      <lastmod>2016-09-05T12:59:15+02:00</lastmod>
+      <lastmod>2016-10-11T18:12:42+02:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -115,7 +128,7 @@
   <url>
     <loc>http://cupofjoakim.github.io/atom.xml</loc>
     
-      <lastmod>2016-09-05T12:59:15+02:00</lastmod>
+      <lastmod>2016-10-11T18:12:42+02:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -128,7 +141,7 @@
   <url>
     <loc>http://cupofjoakim.github.io/</loc>
     
-      <lastmod>2016-09-05T12:59:15+02:00</lastmod>
+      <lastmod>2016-10-11T18:12:42+02:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -141,7 +154,7 @@
   <url>
     <loc>http://cupofjoakim.github.io/sitemap.xml</loc>
     
-      <lastmod>2016-09-05T12:59:15+02:00</lastmod>
+      <lastmod>2016-10-11T18:12:42+02:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
