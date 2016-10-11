@@ -169,15 +169,18 @@
                 z-index: 30;
             }
 
-            video {
+            video, .video-fallback-img {
               position: absolute;
-              top: 0;
-            }
-
-            .video-fallback-img {
-              position: absolute;
-              top: 0;
-              width: 100%;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+              min-width: 100%;
+              min-height: 100%;
+              width: auto;
+              height: auto;
+              z-index: -1000;
+              overflow: hidden;
             }
 
             &:hover .overlay {
