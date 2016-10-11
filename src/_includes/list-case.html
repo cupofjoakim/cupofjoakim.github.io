@@ -1,6 +1,7 @@
-<a class="post case" style="background-image: url('{{ post.gif }}');" href="{{ post.url }}">
+<a class="post case" href="{{ post.url }}">
   <div class="overlay"></div>
-
+  
+  <video autoplay loop mute src="{{ post.animation }}"></video>
   <div class="post-wrap">
 
     <span class="post-date">{{ post.date | date: "%-d %B %Y" }} – </span> <span class="post-cat">{{ post.type }}</span>

@@ -154,6 +154,7 @@
             }
 
             .overlay {
+                z-index: 10;
                 position:absolute;
                 top: 0;
                 height: 500px;
@@ -168,12 +169,23 @@
                 z-index: 30;
             }
 
+            video {
+              position: absolute;
+              top: 0;
+            }
+
+            .video-fallback-img {
+              position: absolute;
+              top: 0;
+              width: 100%;
+            }
+
             &:hover .overlay {
                 background-color: rgba(74,144,226,0.9);
             }
 
         }
-        
+
     }
 }
 

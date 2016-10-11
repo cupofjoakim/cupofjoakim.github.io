@@ -32,4 +32,11 @@ body {
     @media (max-width: 1120px) {
         margin: 0;
     }
+}video {
+  width: 100%;
+}
+
+.posts .post.case video {
+  position: absolute;
+  top: 0;
 }

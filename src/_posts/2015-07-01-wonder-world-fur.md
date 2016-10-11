@@ -4,7 +4,7 @@ date: 2015-07-01
 title:  Wonder World Fur
 categories: cases
 type: case
-gif: http://media.giphy.com/media/113EMjU66WPTKU/giphy.gif
+animation: /assets/images/post-images/wwf-bg.mp4
 excerpt: "A WWF fashion campaign site for fur from imaginary animals. Built early 2013."
 ---
 

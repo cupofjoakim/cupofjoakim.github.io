@@ -4,7 +4,7 @@ date: 2016-02-20
 title: shhbostad.se
 categories: cases
 type: case
-gif: https://media.giphy.com/media/2O7T9fptyIFTG/giphy.gif
+animation: /assets/images/post-images/shh-bg.mp4
 excerpt: I helped Sebton/Co build shhbostad.se and brought wordpress development to modern times!
 ---
 
@@ -19,11 +19,11 @@ The main project I was brought in to develop was a new website for Svenska Hyres
 * Being able to run on a hosting solution that only supports PHP
 
 ## Choosing a platform
-After a lot of research about the limitations around this new system of theirs, it was decided that the site would run on wordpress to keep development time down. Wordpress in itself encourages this "Plug & Play" mentality with a lot of random plugins. I've seen a couple of sites being very hard to debug due to plugins being incompatible and I'm not willing to go down that route. 
+After a lot of research about the limitations around this new system of theirs, it was decided that the site would run on wordpress to keep development time down. Wordpress in itself encourages this "Plug & Play" mentality with a lot of random plugins. I've seen a couple of sites being very hard to debug due to plugins being incompatible and I'm not willing to go down that route.
 
 This led the highest priority of the initial development to be stability. I set out to list exactly what kind of plugins would be needed, and then to test them out to see if everything worked as planned.
 
-In the end I decided to go with [Advanced Custom Fields Pro][acf] for their flexible layouts and repeater fields, [Yoast SEO][yoast] for easy SEO management and [WP Mail SMTP][smtp] to allow wordpress to send mail via smtp. Othe plugins were discarded as they wheren't needed. 
+In the end I decided to go with [Advanced Custom Fields Pro][acf] for their flexible layouts and repeater fields, [Yoast SEO][yoast] for easy SEO management and [WP Mail SMTP][smtp] to allow wordpress to send mail via smtp. Othe plugins were discarded as they wheren't needed.
 
 ## Bringing Wordpress to 2015
 Wordpress, as I said, feels kind of outdated to me. It's been around since forever and I don't feel that the majority of the wordpress community embraces modern development tools. I wanted to make sure to do wordpress justice by trying out a better workflow.
@@ -42,7 +42,7 @@ I fucking love [Advanced Custom Fields][acf].
 ## Adding support for Vitec
 One of the clients big demands was to have support for their new system for building projects, Vitec.
 
-Vitec is a great platform for what Svenska Hyreshus are doing. It's something for both brokers, project managers and so on, but when you update a project the changes also push to the biggest housing sites in sweden, such as Hemnet or Blocket Bostad. 
+Vitec is a great platform for what Svenska Hyreshus are doing. It's something for both brokers, project managers and so on, but when you update a project the changes also push to the biggest housing sites in sweden, such as Hemnet or Blocket Bostad.
 
 To bring this funcitonality to the new project I developed a custom plugin that fetched the information from Vitec's SOAP API, stored them in our database and programmatically added pages for the current projects. Since we couldn't use the 'push' features that hemnet or blocket had to update the information instantly as it was updated in the system, I set up a CRON-job to fetch new information from Vitec every 10 minutes.
 
