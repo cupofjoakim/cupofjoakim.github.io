@@ -31,7 +31,7 @@ gulp.task('jspack', function() {
 });
 
 // gulp.task('js', ["styles"], function(){
-  
+
 //   $.shell.task('browserify ./src/assets/javascript/javascript.js -o ./serve/assets/javascript/bundle.js -d')
 
 //   return gulp.src('./serve/assets/javascript/bundle.js')
@@ -50,13 +50,13 @@ gulp.task("clean:prod", del.bind(null, ["site"]));
 
 // Runs the build command for Jekyll to compile the site locally
 // This will build the site with the production settings
-gulp.task("jekyll:dev", $.shell.task("jekyll build"));
+gulp.task("jekyll:dev", $.shell.task("bundle exec jekyll build"));
 
 
 
 gulp.task("jekyll-rebuild", ["jekyll:dev", "jspack", "styles"], function () {
   console.log("reladd");
-  
+
   gulp.src("./.tmp/javascript/bundle.js")
     .pipe(gulp.dest("./serve/assets/javascript/"));
 
@@ -67,7 +67,7 @@ gulp.task("jekyll-rebuild", ["jekyll:dev", "jspack", "styles"], function () {
 // Almost identical to the above task, but instead we load in the build configuration
 // that overwrites some of the settings in the regular configuration so that you
 // don"t end up publishing your drafts or future posts
-gulp.task("jekyll:prod", $.shell.task("jekyll build --config _config.yml,_config.build.yml"));
+gulp.task("jekyll:prod", $.shell.task("bundle exec jekyll build --config _config.yml,_config.build.yml"));
 
 
 
