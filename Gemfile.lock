@@ -70,4 +70,8 @@ DEPENDENCIES
   classifier-reborn
   fast-stemmer
   jekyll
+  jekyll-paginate
   redcarpet
+
+BUNDLED WITH
+   1.12.5
