@@ -27,6 +27,13 @@ The main SCSS file for everything, yep
   body {
     margin: 0; } }
 
+video {
+  width: 100%; }
+
+.posts .post.case video {
+  position: absolute;
+  top: 0; }
+
 html, p {
   font-family: 'Vollkorn', serif; }
 
@@ -122,6 +129,7 @@ a {
       font-size: 28px;
       font-weight: bold; }
     .profile .about .role {
+      margin-top: 10px;
       font-size: 20px; }
     .profile .about .position {
       margin-bottom: 40px; }
@@ -147,6 +155,8 @@ a {
       margin: 0;
       padding: 0;
       list-style: none; }
+      .profile .about .contact li a {
+        padding-bottom: 5px; }
       .profile .about .contact a:after {
         display: none; }
     .profile .about .external-links {
@@ -159,13 +169,13 @@ a {
         margin: 0 10px 0 0; }
         .profile .about .external-links li a:after {
           display: none; }
-        .profile .about .external-links li img {
+        .profile .about .external-links li img, .profile .about .external-links li svg {
           width: 100%;
           -webkit-transition: -webkit-transform .1s ease;
                   transition: transform .1s ease; }
         .profile .about .external-links li:last-child {
           margin: 0; }
-        .profile .about .external-links li:hover img {
+        .profile .about .external-links li:hover img, .profile .about .external-links li:hover svg {
           -webkit-transform: scale(1.5);
                   transform: scale(1.5); }
     @media (max-width: 1120px) {
@@ -307,6 +317,7 @@ a {
       .posts .post.case p, article.main .post.case p {
         margin: 0; }
       .posts .post.case .overlay, article.main .post.case .overlay {
+        z-index: 10;
         position: absolute;
         top: 0;
         height: 500px;
@@ -317,6 +328,18 @@ a {
       .posts .post.case .post-wrap, article.main .post.case .post-wrap {
         position: relative;
         z-index: 30; }
+      .posts .post.case video, .posts .post.case .video-fallback-img, article.main .post.case video, article.main .post.case .video-fallback-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden; }
       .posts .post.case:hover .overlay, article.main .post.case:hover .overlay {
         background-color: rgba(74, 144, 226, 0.9); }
 
