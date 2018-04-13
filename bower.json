@@ -1,8 +1,0 @@
-{
-  "name": "12-cupofjoakim-github-io",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "velocity": "~1.2.2"
-  }
-}
